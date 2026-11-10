@@ -30,7 +30,7 @@ This recomputes every cell of Tables 5 to 13 from the files in `data/` and compa
 | --- | --- | --- | --- |
 | HOT-2, main protocol | Sections 2.1 and 3.1, Tables 5 to 8 and 11, Figures 1 to 3 | `hot2_v5.py`, with problem generators in `hot2_v2.py` and `hot2_v4.py` and statistics in `bt_stats.py` | `data/hot2_main/hot2v5_<model>.json` |
 | HOT-2, joint-report check | Table 9 | `berg_test.py` | `data/joint_report/bergtest_<model>.json` |
-| HOT-2, reasoning round | Table 10 | `m4_study.py`, `m4_families.py` | `data/reasoning_round/m4main_*.json` |
+| HOT-2, reasoning round | Table 10 | `m4_study.py`, `m4_families.py` | `data/reasoning_round/m4main_*.json`, with the reply texts in `m4main_*_attempts.jsonl` |
 | HOT-2, incremental information | Section 3.1 | `incremental_information.py` (a re-implementation, see below) | `data/incremental_information/` |
 | AE-1 | Sections 2.2 and 3.2, Table 12, Figures 4 and 5 | `ae1_ladder2.py`, with the environment in `ae1_test.py` and `ae1_ladder.py` | `data/ae1/ae1ladder2_<model>.json` |
 | HOT-3 | Sections 2.3 and 3.3, Table 13, Figure 6 | `hot3_v2.py` | `data/hot3/hot3v2_<model>.json` and `hot3v2_<model>_run2.json` |
@@ -45,6 +45,7 @@ Names used in the files, where they differ from the paper:
 - **AE-1 conditions.** `static_hard` is the static low budget, `budget_cut` the silent cut, `budget_cut_announced` the announced cut and `budget_cut_enforced` the enforced cut. A task is an `episode`.
 - **HOT-3 conditions.** `shown` is ratings shown, `permuted` is ratings shuffled and `hidden` is ratings withheld. The files without `_run2` hold the first run of all three conditions with a 200-token response limit. The `_run2` files hold the ratings-withheld condition run again with a 1,000-token limit, which is the run the paper reports.
 - **Models.** `grok-4.20-0309-non-reasoning` is the paper's grok-4.20-non-reasoning. In the reasoning round, `grok` is grok-4.3 and `sol-low` and `sol-high` are gpt-5.6-sol at low and high reasoning effort.
+- **Replies of the reasoning round.** Each `_attempts.jsonl` file has one line per reply. `trial` gives the problem type, the difficulty level and the number of the problem, with `/cons0` to `/cons2` for the repeated answers behind the consistency measure. `kind` is `answer`, `conf` or `bet`, `raw` is the text of the reply, `stop` the reason the reply ended, `rtok` the number of reasoning tokens reported, and `ok` is false only if the API call failed after its retries.
 
 ## Re-running the analyses
 
