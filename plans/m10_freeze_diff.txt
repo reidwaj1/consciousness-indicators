@@ -1,0 +1,81 @@
+--- 
++++ 
+@@ -7,14 +7,14 @@
+ this file by filling EXACTLY FIVE double-brace blank sites and
+ NOTHING ELSE:
+ 
+-    {{landed_family_and_level}}   the family+level Stage 1 lands on
+-    {{weights_shas}}              repo id, revision, quant source+shas,
++    tracking level 3 (probe acc 0.792, parse 1.00; matched-pair estimate 11706; walked L0=1.00, L1=0.96, L2=0.96, L3=0.79)   the family+level Stage 1 lands on
++    deepseek-ai/DeepSeek-V4-Flash @ 60d8d70770c6776ff598c94bb586a859a38244f1, NATIVE FP8 (FineGrainedFP8, e4m3, block 128x128; no requantization); stack: 2x H200, transformers 5.14.1, torch 2.8.0.dev20250319+cu128, triton 3.7.1, kernels 0.15.2 + kernels-community/finegrained-fp8 @ 7cdb05d4; multi-stream residual (4 x 4096) captured flattened (16384 feats), collapse to single stream by model hc_head before output              repo id, revision, quant source+shas,
+                                   exact inference-stack versions
+-    {{determinism_criterion}}     the measured noise-floor numbers that
++    noise floor measured EXACTLY ZERO (max |dlogit| 0.0e+00; all per-layer L2 dh 0.0) — the <=2x-noise-floor criteria collapse to exact equality; greedy stability 20/20 exact     the measured noise-floor numbers that
+                                   instantiate the G0 criterion rule
+-    {{n}}                         item count at freeze (400, or the
++    400 (throughput projections: arm A 0.14h, arm B 0.27h, arm C 5.38h — all inside caps at full n)                         item count at freeze (400, or the
+                                   frozen ladder value forced by budget)
+-    {{budget_state}}              pessimistic remaining credit +
++    balance $123.70 at freeze; ceiling $400 (amended 2026-08-03); spent ~$26.3 total across all pods per m10_budget.log              pessimistic remaining credit +
+                                   provider balance at freeze time
+ 
+ THE FREEZE MAY FILL NOTHING ELSE. Every endpoint, clause, threshold,
+@@ -27,7 +27,7 @@
+ dated, hash-logged amendment with a reason (house rule, M8/M9).
+ 
+ Family-conditional content is fully enumerated in section 7 for every
+-candidate family. Filling {{landed_family_and_level}} SELECTS one
++candidate family. Filling tracking level 3 (probe acc 0.792, parse 1.00; matched-pair estimate 11706; walked L0=1.00, L1=0.96, L2=0.96, L3=0.79) SELECTS one
+ subsection; it edits none of them. The unselected subsections stay in
+ the frozen prereg as inert text â€” proof the content predated the data
+ for every family that could have landed.
+@@ -38,11 +38,11 @@
+ pinned in m10_model_pin.json: 60d8d70770c6776ff598c94bb586a859a38244f1;
+ 284B/13B-active MoE, 4-bit weights). FALLBACK per mission: DeepSeek-V3
+ 4-bit if VRAM allows, else Llama-3.3-70B â€” a fallback landing is
+-recorded inside {{weights_shas}}, which holds, verbatim from the pod:
++recorded inside deepseek-ai/DeepSeek-V4-Flash @ 60d8d70770c6776ff598c94bb586a859a38244f1, NATIVE FP8 (FineGrainedFP8, e4m3, block 128x128; no requantization); stack: 2x H200, transformers 5.14.1, torch 2.8.0.dev20250319+cu128, triton 3.7.1, kernels 0.15.2 + kernels-community/finegrained-fp8 @ 7cdb05d4; multi-stream residual (4 x 4096) captured flattened (16384 feats), collapse to single stream by model hc_head before output, which holds, verbatim from the pod:
+ HF repo id, revision hash, quantization source+shas, and the EXACT
+ inference stack (transformers version, quant backend, torch version).
+ 
+-  {{weights_shas}}
++  deepseek-ai/DeepSeek-V4-Flash @ 60d8d70770c6776ff598c94bb586a859a38244f1, NATIVE FP8 (FineGrainedFP8, e4m3, block 128x128; no requantization); stack: 2x H200, transformers 5.14.1, torch 2.8.0.dev20250319+cu128, triton 3.7.1, kernels 0.15.2 + kernels-community/finegrained-fp8 @ 7cdb05d4; multi-stream residual (4 x 4096) captured flattened (16384 feats), collapse to single stream by model hc_head before output
+ 
+ One identical forward path for all arms: plain transformers forward,
+ no serving engines (vLLM/SGLang), no fusion flags, eager-equivalent
+@@ -62,7 +62,7 @@
+ magnitude â€” else RED. The measured floors and the realized numeric
+ thresholds they induce are recorded as:
+ 
+-  {{determinism_criterion}}
++  noise floor measured EXACTLY ZERO (max |dlogit| 0.0e+00; all per-layer L2 dh 0.0) — the <=2x-noise-floor criteria collapse to exact equality; greedy stability 20/20 exact
+ 
+ CHAT-TEMPLATE INVOCATION (pinned at Stage -1, verified at G0 item 6):
+ apply_chat_template with add_generation_prompt=True and any
+@@ -86,7 +86,7 @@
+ 
+ ## 2. Landed family and level
+ 
+-  {{landed_family_and_level}}
++  tracking level 3 (probe acc 0.792, parse 1.00; matched-pair estimate 11706; walked L0=1.00, L1=0.96, L2=0.96, L3=0.79)
+ 
+ Stage 1 walks tracking's ops ladder per M7 protocol; if saturated,
+ ONLY whitelisted numeric m4 families. GATE: accuracy in [0.30, 0.80],
+@@ -109,7 +109,7 @@
+ > use the identical item list â€” the first n of the frozen seed order;
+ > Stage-3 seeds disjoint from calibration seeds).
+ 
+-  n at freeze = {{n}}
++  n at freeze = 400 (throughput projections: arm A 0.14h, arm B 0.27h, arm C 5.38h — all inside caps at full n)
+ 
+ - Seeds (fixed now, disjoint by construction): calibration item seed
+   601 (generator re-verification seed 1601); Stage-3 item seed 1013
+@@ -652,7 +652,7 @@
+ 
+ ## 10. Budget coupling
+ 
+-  {{budget_state}}
++  balance $123.70 at freeze; ceiling $400 (amended 2026-08-03); spent ~$26.3 total across all pods per m10_budget.log
+ 
+ The n ladder (400 -> 300 -> 250) is budget-triggered ONLY, decided
+ between arms from m10_budget.log alone, logged with the forcing
