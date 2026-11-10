@@ -1,0 +1,6420 @@
+{
+ "model": "claude-sonnet-5",
+ "blocks": 20,
+ "seed": 55,
+ "tier": "core",
+ "arms": [
+  "hidden"
+ ],
+ "block_size": 12,
+ "budget": 4,
+ "verify_cost": 0.5,
+ "temperature": 1.0,
+ "domain_mix": [
+  [
+   "arith_standard",
+   5
+  ],
+  [
+   "tracking",
+   4
+  ],
+  [
+   "letters_fixed",
+   3
+  ]
+ ],
+ "domain_level": {
+  "arith_standard": 4,
+  "tracking": 6,
+  "letters_fixed": 15
+ },
+ "prereg": {
+  "primary": "hidden arm: total wrong-caught > exact within-block permutation null (hypergeometric), one-sided alpha 0.05. MECHANISM CAVEAT (preregistered): passing shows error-detection AT DECISION TIME; because the problems are shown, the mechanism may include re-solving rather than introspection. Domain-prior and display-following alternatives are diagnosed by the DomainQuota baseline, within-domain shares, and the permuted arm \u2014 not by the primary itself",
+  "secondary": "hidden arm: verify_share(arith) < err_share(arith), exact one-sided binomial over per-block signs, alpha 0.05",
+  "everything_else": "exploratory"
+ },
+ "provenance": {
+  "protocol_version": "hot3_v2.0",
+  "script_sha256": {
+   "hot3_v2.py": "11d8abe7aa0786dc7928bb43a2f3fad1f160651054373bac2289ea46a8ce0cdc",
+   "hot2_v2.py": "97fd3be06319c8fa464ac7f80f186977f4f7744e089ec59c57d30b54bc9193b7",
+   "hot2_v4.py": "96b8e40272bc3495d9767fb1e682e27e3175355b61281fc583a03b88d89ff6ed",
+   "bt_stats.py": "35c79bc5de526fcecde23eecc686b2002234231754570341354482d12fd54e00"
+  },
+  "params": {
+   "selftest": false,
+   "model": "claude-sonnet-5",
+   "blocks": 20,
+   "tier": "core",
+   "arms": "hidden",
+   "seed": 55,
+   "thinking": "disabled",
+   "from_json": null
+  },
+  "python": "3.12.7"
+ },
+ "blocks_data": [
+  {
+   "tentative": [
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 381. Subtract 787. Subtract 291. Add 599. Multiply by 9.",
+     "true": -882,
+     "pred": -882,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-882",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'h' appears in the string below.\n\nString:\noyqhnwhpwbzkvkbfnuidupjohtuhhc",
+     "true": 5,
+     "pred": 6,
+     "confidence": 45,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "45",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 13, blue box with 20. Add 9 items to the green box. Swap the contents of the blue and red boxes. Move 9 items from the green box to the blue box. Remove 9 items from the blue box. Add 7 items to the green box. Swap the contents of the blue and red boxes.\n\nHow many items end up in the red box?",
+     "true": 12,
+     "pred": 12,
+     "confidence": 20,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'o' appears in the string below.\n\nString:\nlaoxpvodikicgcxhwoghwuxmiykylf",
+     "true": 3,
+     "pred": 3,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 467. Add 812. Add 286. Subtract 787. Subtract 715.",
+     "true": 63,
+     "pred": 63,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "63",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 13 items, green box with 16, blue box with 5. Add 3 items to the green box. Swap the contents of the green and red boxes. Remove 2 items from the red box. Remove 4 items from the green box. Move 5 items from the green box to the blue box. Move 6 items from the blue box to the red box.\n\nHow many items end up in the red box?",
+     "true": 23,
+     "pred": 17,
+     "confidence": 55,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'n' appears in the string below.\n\nString:\njfralqvknatwnjszmokdhnkyinfmqn",
+     "true": 5,
+     "pred": 6,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 865. Multiply by 5. Multiply by 9. Subtract 775. Subtract 264.",
+     "true": 37886,
+     "pred": 37886,
+     "confidence": 15,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "37886",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 634. Add 415. Multiply by 6. Add 100. Add 701.",
+     "true": 7095,
+     "pred": 6885,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6885",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 18 items, green box with 19, blue box with 9. Remove 6 items from the green box. Remove 1 items from the blue box. Remove 4 items from the green box. Move 1 items from the green box to the blue box. Swap the contents of the red and blue boxes. Add 8 items to the green box.\n\nHow many items end up in the green box?",
+     "true": 16,
+     "pred": 17,
+     "confidence": 65,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 7 items, green box with 20, blue box with 7. Add 5 items to the blue box. Swap the contents of the red and green boxes. Move 6 items from the green box to the red box. Add 5 items to the green box. Add 3 items to the green box. Swap the contents of the green and blue boxes.\n\nHow many items end up in the blue box?",
+     "true": 9,
+     "pred": 20,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 210. Add 264. Add 55. Subtract 331. Subtract 161.",
+     "true": 37,
+     "pred": 37,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "37",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      9,
+      3,
+      6,
+      10
+     ],
+     "perm": null,
+     "finals": [
+      -882,
+      6,
+      12,
+      3,
+      63,
+      23,
+      6,
+      37886,
+      7095,
+      16,
+      20,
+      37
+     ],
+     "score": 9,
+     "net_score": 9.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll prioritize verifying calculations that involve multiple steps where errors compound, particularly the multi-step arithmetic and tracking problems that seem most error-prone.\n\nLet me quickly check a few mentally:\n\nItem 1: 381-787-291+599 = -98, \u00d79 = -882 \u2713 (matches)\nItem 8: 865\u00d75=4325, \u00d79=38925, -775=38150, -264=37886 \u2713 (matches)\nItem 9: 634+415=1049, \u00d76=6294, +100=6394, +701=7095 (mismatch with 6885!)\nItem 12: 210+264=474, +55=529, -331=198, -161=37 \u2713 (matches)\n\nItem 9 shows a discrepancy, so I should verify that. Let me check the box tracking ones too since they're complex.\n\n{\"verify\": [9, 3, 6, 10]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "7095",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "23",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "16",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55000
+  },
+  {
+   "tentative": [
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 651. Subtract 515. Multiply by 4. Multiply by 3. Add 636.",
+     "true": 2268,
+     "pred": 2268,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2268",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 398. Multiply by 4. Subtract 934. Subtract 788. Add 240.",
+     "true": 110,
+     "pred": 110,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "110",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'e' appears in the string below.\n\nString:\nbjoicaeuajpvasvbgjtxewujpchnxe",
+     "true": 3,
+     "pred": 3,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'l' appears in the string below.\n\nString:\nhdyzlrshrfocllcikynmpgoeiaxphk",
+     "true": 3,
+     "pred": 3,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 14 items, green box with 10, blue box with 8. Move 4 items from the green box to the blue box. Add 3 items to the blue box. Move 6 items from the red box to the green box. Remove 5 items from the blue box. Swap the contents of the red and green boxes. Add 9 items to the green box.\n\nHow many items end up in the blue box?",
+     "true": 10,
+     "pred": 10,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "10",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 306. Multiply by 3. Multiply by 8. Subtract 57. Add 248.",
+     "true": 7535,
+     "pred": 7535,
+     "confidence": 15,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "7535",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 9 items, green box with 16, blue box with 12. Move 3 items from the blue box to the red box. Add 4 items to the green box. Swap the contents of the red and blue boxes. Swap the contents of the red and blue boxes. Move 1 items from the green box to the blue box. Move 2 items from the blue box to the green box.\n\nHow many items end up in the red box?",
+     "true": 12,
+     "pred": 12,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 7 items, green box with 10, blue box with 6. Swap the contents of the red and blue boxes. Swap the contents of the red and blue boxes. Add 5 items to the green box. Remove 6 items from the red box. Move 6 items from the green box to the blue box. Add 4 items to the green box.\n\nHow many items end up in the blue box?",
+     "true": 12,
+     "pred": 12,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'a' appears in the string below.\n\nString:\nguedmzawyakcyoantszqbnfeagxjsb",
+     "true": 4,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 855. Multiply by 3. Multiply by 4. Multiply by 5. Multiply by 7. Keep only the last three digits (result mod 1000).",
+     "true": 100,
+     "pred": 900,
+     "confidence": 35,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "900",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 11 items, green box with 13, blue box with 11. Add 4 items to the red box. Remove 3 items from the green box. Swap the contents of the red and blue boxes. Remove 2 items from the red box. Swap the contents of the green and blue boxes. Swap the contents of the green and blue boxes.\n\nHow many items end up in the blue box?",
+     "true": 15,
+     "pred": 13,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "13",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 424. Subtract 545. Add 731. Subtract 945. Subtract 914.",
+     "true": -1249,
+     "pred": -1249,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-1249",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      10,
+      12,
+      6,
+      1
+     ],
+     "perm": null,
+     "finals": [
+      2268,
+      110,
+      3,
+      3,
+      10,
+      7535,
+      12,
+      12,
+      4,
+      100,
+      13,
+      -1249
+     ],
+     "score": 11,
+     "net_score": 11.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "{\"verify\": [10, 12, 6, 1]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "100",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "-1249",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "7535",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "2268",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55001
+  },
+  {
+   "tentative": [
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 19 items, green box with 16, blue box with 10. Remove 3 items from the blue box. Add 7 items to the red box. Swap the contents of the blue and green boxes. Swap the contents of the blue and red boxes. Swap the contents of the green and blue boxes. Add 9 items to the blue box.\n\nHow many items end up in the red box?",
+     "true": 16,
+     "pred": 7,
+     "confidence": 20,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "7",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 192. Multiply by 9. Subtract 516. Add 505. Add 790.",
+     "true": 2507,
+     "pred": 2507,
+     "confidence": 85,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2507",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 581. Multiply by 6. Multiply by 7. Subtract 537. Subtract 668.",
+     "true": 23197,
+     "pred": 23197,
+     "confidence": 15,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "23197",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 19 items, green box with 6, blue box with 8. Move 7 items from the red box to the blue box. Move 1 items from the blue box to the green box. Swap the contents of the red and blue boxes. Move 3 items from the green box to the red box. Add 4 items to the red box. Remove 6 items from the red box.\n\nHow many items end up in the green box?",
+     "true": 4,
+     "pred": 4,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 't' appears in the string below.\n\nString:\nsuctxtrpgtvhcttamvslbuhqmmexjj",
+     "true": 5,
+     "pred": 5,
+     "confidence": 45,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "45",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 't' appears in the string below.\n\nString:\nfwikhezhymtqvgdpptakdtqsihquud",
+     "true": 3,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 6 items, green box with 12, blue box with 20. Remove 5 items from the green box. Move 4 items from the red box to the green box. Remove 1 items from the red box. Swap the contents of the red and blue boxes. Move 9 items from the green box to the red box. Remove 1 items from the green box.\n\nHow many items end up in the red box?",
+     "true": 29,
+     "pred": 29,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "29",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 280. Multiply by 9. Subtract 629. Add 602. Add 908.",
+     "true": 3401,
+     "pred": 3401,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3401",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 10 items, green box with 8, blue box with 16. Swap the contents of the red and blue boxes. Remove 1 items from the blue box. Add 1 items to the red box. Remove 7 items from the blue box. Remove 2 items from the blue box. Add 6 items to the blue box.\n\nHow many items end up in the red box?",
+     "true": 17,
+     "pred": 11,
+     "confidence": 100,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "11",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "100",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 615. Add 698. Subtract 329. Add 681. Multiply by 8.",
+     "true": 13320,
+     "pred": 13320,
+     "confidence": 15,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "13320",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'a' appears in the string below.\n\nString:\nxvamyoalsvddvskrcthglpgitxwzia",
+     "true": 3,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 729. Multiply by 6. Multiply by 3. Subtract 975. Multiply by 3.",
+     "true": 36441,
+     "pred": 36297,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "36297",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      1,
+      9,
+      4,
+      7
+     ],
+     "perm": null,
+     "finals": [
+      16,
+      2507,
+      23197,
+      4,
+      5,
+      4,
+      29,
+      3401,
+      17,
+      13320,
+      4,
+      36297
+     ],
+     "score": 9,
+     "net_score": 9.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll prioritize verifying the multi-step tracking problems and calculations that have higher chance of compounding errors.\n\nLet me quickly re-verify some mentally:\n\nItem 1: Red:19+7=26, blue:10-3=7. Swap blue/green: blue=16,green=7. Swap blue/red: blue=26,red=16. Swap green/blue: green=26,blue=7. Add 9 to blue=16. Red=16 (not 7).\n\nItem 3: 581*6=3486, *7=24402, -537=23865, -668=23197. This matches.\n\nItem 7: Red:6,green:12,blue:20. Remove5 green=7. Move4 red\u2192green: red=2,green=11. Remove1 red=1. Swap red/blue: red=20,blue=1. Move9 green\u2192red: green=2,red=29. Remove1 green=1. Red=29. Matches.\n\nItem 9: Swap red/blue: red=16,blue=10. Remove1 blue=9. Add1 red=17. Remove7 blue=2. Remove2 blue=0. Add6 blue=6. Red=17, not 11.\n\nThese calculations suggest items 1 and 9 have errors in my tentative answers, worth verifying.\n\n{\"verify\": [1, 9, 4, 7]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "16",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "29",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55002
+  },
+  {
+   "tentative": [
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 343. Multiply by 7. Add 671. Add 626. Add 120.",
+     "true": 3818,
+     "pred": 3818,
+     "confidence": 15,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3818",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 425. Multiply by 8. Multiply by 6. Add 366. Multiply by 5.",
+     "true": 103830,
+     "pred": 104830,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "104830",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 's' appears in the string below.\n\nString:\njeywmzsfsabilkkbasoelojghdkssd",
+     "true": 5,
+     "pred": 5,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 8 items, green box with 13, blue box with 14. Move 4 items from the blue box to the red box. Add 6 items to the green box. Remove 9 items from the blue box. Move 4 items from the red box to the blue box. Move 2 items from the blue box to the green box. Swap the contents of the red and blue boxes.\n\nHow many items end up in the green box?",
+     "true": 21,
+     "pred": 21,
+     "confidence": 70,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "21",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "70",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 18 items, green box with 19, blue box with 20. Swap the contents of the red and green boxes. Swap the contents of the red and blue boxes. Add 7 items to the green box. Move 2 items from the red box to the green box. Add 1 items to the red box. Swap the contents of the red and blue boxes.\n\nHow many items end up in the red box?",
+     "true": 19,
+     "pred": 18,
+     "confidence": 20,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "18",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 19 items, green box with 8, blue box with 7. Swap the contents of the green and red boxes. Swap the contents of the red and green boxes. Add 2 items to the blue box. Swap the contents of the green and red boxes. Swap the contents of the red and blue boxes. Remove 6 items from the green box.\n\nHow many items end up in the red box?",
+     "true": 9,
+     "pred": 9,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 't' appears in the string below.\n\nString:\nwivsxgsbvwwmmjbxitnjxktglbwiyt",
+     "true": 3,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 226. Multiply by 4. Multiply by 6. Multiply by 4. Subtract 92.",
+     "true": 21604,
+     "pred": 21596,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "21596",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 19 items, green box with 20, blue box with 12. Move 9 items from the green box to the red box. Remove 4 items from the blue box. Move 2 items from the blue box to the red box. Add 3 items to the blue box. Remove 5 items from the red box. Move 1 items from the blue box to the green box.\n\nHow many items end up in the green box?",
+     "true": 12,
+     "pred": 12,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 322. Add 100. Subtract 182. Subtract 894. Subtract 708.",
+     "true": -1362,
+     "pred": -1362,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-1362",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'i' appears in the string below.\n\nString:\nsvzpcveiqesokwybllupkllizphtqq",
+     "true": 2,
+     "pred": 2,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 909. Add 312. Multiply by 7. Subtract 56. Add 944.",
+     "true": 9435,
+     "pred": 9435,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "9435",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      2,
+      8,
+      4,
+      6
+     ],
+     "perm": null,
+     "finals": [
+      3818,
+      103830,
+      5,
+      21,
+      18,
+      9,
+      4,
+      21604,
+      12,
+      -1362,
+      2,
+      9435
+     ],
+     "score": 10,
+     "net_score": 10.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll prioritize verifying calculations that involve multiple steps where errors compound, and box-tracking problems with many swaps (which are error-prone).\n\nLet me quickly re-check a few mentally:\n\nItem 2: 425*8=3400, *6=20400, +366=20766, *5=103830 (I got 104830 - discrepancy!)\n\nItem 8: 226*4=904, *6=5424, *4=21696, -92=21604 (I got 21596 - discrepancy!)\n\nItem 4: Complex box tracking with swaps - high risk of error.\n\nItem 6: Complex box tracking with swaps - high risk of error.\n\nThese four show either clear discrepancies or high complexity risk.\n\n{\"verify\": [2, 8, 4, 6]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "103830",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "21604",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "21",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55003
+  },
+  {
+   "tentative": [
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 541. Add 122. Subtract 396. Subtract 286. Add 730.",
+     "true": 711,
+     "pred": 711,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "711",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 5, blue box with 10. Add 9 items to the blue box. Move 7 items from the blue box to the red box. Move 5 items from the green box to the red box. Move 2 items from the blue box to the green box. Swap the contents of the blue and red boxes. Remove 1 items from the green box.\n\nHow many items end up in the green box?",
+     "true": 1,
+     "pred": 2,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 655. Multiply by 7. Add 885. Subtract 848. Multiply by 5.",
+     "true": 23110,
+     "pred": 22110,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "22110",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'l' appears in the string below.\n\nString:\nqogaklunzzcrursapllxdyllelpnmb",
+     "true": 6,
+     "pred": 6,
+     "confidence": 45,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "45",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 507. Subtract 657. Multiply by 4. Add 584. Subtract 926.",
+     "true": -942,
+     "pred": -942,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-942",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 173. Multiply by 7. Subtract 839. Add 356. Add 353.",
+     "true": 1081,
+     "pred": 1081,
+     "confidence": 35,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1081",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 10 items, green box with 15, blue box with 11. Move 3 items from the green box to the red box. Remove 7 items from the green box. Move 3 items from the green box to the blue box. Move 5 items from the red box to the green box. Move 3 items from the red box to the green box. Remove 3 items from the blue box.\n\nHow many items end up in the red box?",
+     "true": 5,
+     "pred": 5,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 11 items, green box with 11, blue box with 10. Add 8 items to the green box. Remove 8 items from the blue box. Remove 8 items from the green box. Remove 6 items from the red box. Remove 1 items from the green box. Add 1 items to the blue box.\n\nHow many items end up in the red box?",
+     "true": 5,
+     "pred": 5,
+     "confidence": 100,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "100",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 388. Add 500. Subtract 156. Add 452. Subtract 869.",
+     "true": 315,
+     "pred": 315,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "315",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'r' appears in the string below.\n\nString:\nzjrrrkovqarsrhujhrfqefrfagrwzx",
+     "true": 8,
+     "pred": 9,
+     "confidence": 45,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "45",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'r' appears in the string below.\n\nString:\nyasdcosipyrrmrlejnpkorrbwprrnr",
+     "true": 8,
+     "pred": 10,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "10",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 10 items, green box with 10, blue box with 5. Add 5 items to the red box. Swap the contents of the red and green boxes. Move 9 items from the red box to the blue box. Move 3 items from the blue box to the red box. Add 1 items to the blue box. Remove 4 items from the red box.\n\nHow many items end up in the red box?",
+     "true": 0,
+     "pred": 9,
+     "confidence": 45,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "45",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      2,
+      8,
+      10,
+      11
+     ],
+     "perm": null,
+     "finals": [
+      711,
+      1,
+      22110,
+      6,
+      -942,
+      1081,
+      5,
+      5,
+      315,
+      8,
+      8,
+      9
+     ],
+     "score": 10,
+     "net_score": 10.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, let me identify the ones most likely to have errors and verify those.\n\nLet me recalculate a few mentally:\n\nItem 2: Red=12,Green=5,Blue=10. Add 9 to blue=19. Move 7 blue\u2192red: red=19,blue=12. Move 5 green\u2192red: green=0,red=24. Move 2 blue\u2192green: blue=10,green=2. Swap blue/red: blue=24,red=10. Remove 1 from green: green=1. My answer was 2, should be 1.\n\nItem 10: \"zjrrrkovqarsrhujhrfqefrfagrwzx\" - counting r's: z-j-r-r-r-k-o-v-q-a-r-s-r-h-u-j-h-r-f-q-e-f-r-f-a-g-r-w-z-x = positions with r: 3+1+1+1+1+1+1 = let me recount carefully, likely error.\n\nItem 8: Red=11,Green=11,Blue=10. Add 8 green=19. Remove 8 blue=2. Remove 8 green=11. Remove 6 red=5. Remove 1 green=10. Add 1 blue=3. Red=5, seems correct.\n\nI'll verify the ones I found discrepancies in plus complex letter counts.\n\n{\"verify\": [2, 8, 10, 11]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55004
+  },
+  {
+   "tentative": [
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 387. Subtract 615. Add 769. Multiply by 4. Multiply by 8.",
+     "true": 17312,
+     "pred": 17312,
+     "confidence": 85,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "17312",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 333. Multiply by 8. Multiply by 5. Add 881. Multiply by 3.",
+     "true": 42603,
+     "pred": 42663,
+     "confidence": 95,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "42663",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 284. Multiply by 8. Add 227. Add 110. Add 447.",
+     "true": 3056,
+     "pred": 3056,
+     "confidence": 15,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3056",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 508. Multiply by 9. Multiply by 8. Subtract 509. Subtract 927.",
+     "true": 35140,
+     "pred": 35140,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "35140",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 16 items, green box with 11, blue box with 5. Remove 5 items from the blue box. Remove 8 items from the green box. Add 3 items to the green box. Move 3 items from the green box to the red box. Move 2 items from the green box to the blue box. Remove 1 items from the green box.\n\nHow many items end up in the blue box?",
+     "true": 2,
+     "pred": 2,
+     "confidence": 85,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 177. Add 435. Subtract 600. Multiply by 3. Multiply by 5.",
+     "true": 180,
+     "pred": 180,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "180",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'r' appears in the string below.\n\nString:\nkyrvjawnrvoytsrrarmkbpfbdrcnyr",
+     "true": 7,
+     "pred": 8,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 17 items, green box with 11, blue box with 10. Swap the contents of the green and red boxes. Move 7 items from the blue box to the green box. Move 6 items from the green box to the red box. Move 5 items from the green box to the blue box. Remove 8 items from the green box. Add 9 items to the green box.\n\nHow many items end up in the blue box?",
+     "true": 8,
+     "pred": 8,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'o' appears in the string below.\n\nString:\nizcgobgorothfcokomdfxsyucodxpr",
+     "true": 6,
+     "pred": 6,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 13 items, green box with 7, blue box with 5. Swap the contents of the blue and red boxes. Move 3 items from the green box to the red box. Remove 2 items from the green box. Add 7 items to the blue box. Remove 1 items from the red box. Move 2 items from the red box to the green box.\n\nHow many items end up in the blue box?",
+     "true": 20,
+     "pred": 12,
+     "confidence": 95,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'o' appears in the string below.\n\nString:\nirnntnwsooooqfhoerxqcrkojkvcra",
+     "true": 6,
+     "pred": 6,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 17 items, green box with 19, blue box with 5. Add 5 items to the red box. Swap the contents of the red and blue boxes. Move 1 items from the red box to the blue box. Remove 1 items from the red box. Swap the contents of the green and red boxes. Swap the contents of the green and red boxes.\n\nHow many items end up in the green box?",
+     "true": 19,
+     "pred": 19,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "19",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      8,
+      10,
+      12,
+      4
+     ],
+     "perm": null,
+     "finals": [
+      17312,
+      42663,
+      3056,
+      35140,
+      2,
+      180,
+      8,
+      8,
+      6,
+      20,
+      6,
+      19
+     ],
+     "score": 10,
+     "net_score": 10.0,
+     "adoption": [
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll prioritize verifying the multi-step tracking and calculation problems where errors compound easily.\n\nLet me quickly re-check some mentally:\n\nItem 3: 284*8=2272, +227=2499, +110=2609, +447=3056 \u2713 seems right but let me verify anyway due to chain length.\n\nItem 5: Red16 Green11 Blue5 \u2192 Blue:5-5=0, Green:11-8=3,+3=6,-3=3(red19),-2=1(blue2),-1=0. Blue=2. Matches but complex.\n\nItem 8 and 10 are complex box-tracking with swaps - high error risk.\n\nItem 12 has swaps too - tricky.\n\nI'll verify the ones I'm least confident in: 8, 10, 12, and 4.\n\n{\"verify\": [8, 10, 12, 4]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "19",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "35140",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55005
+  },
+  {
+   "tentative": [
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 7 items, green box with 13, blue box with 16. Swap the contents of the green and red boxes. Remove 5 items from the green box. Remove 4 items from the blue box. Remove 1 items from the blue box. Swap the contents of the red and blue boxes. Remove 6 items from the blue box.\n\nHow many items end up in the green box?",
+     "true": 2,
+     "pred": 2,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 7, blue box with 17. Swap the contents of the red and green boxes. Remove 8 items from the green box. Add 7 items to the green box. Add 2 items to the red box. Swap the contents of the red and blue boxes. Move 3 items from the green box to the blue box.\n\nHow many items end up in the red box?",
+     "true": 17,
+     "pred": 19,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "19",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 690. Multiply by 7. Add 654. Subtract 609. Subtract 651.",
+     "true": 4224,
+     "pred": 4224,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4224",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 7, blue box with 9. Move 1 items from the green box to the red box. Remove 5 items from the green box. Move 7 items from the blue box to the green box. Remove 5 items from the red box. Add 5 items to the green box. Swap the contents of the blue and green boxes.\n\nHow many items end up in the green box?",
+     "true": 2,
+     "pred": 2,
+     "confidence": 20,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'e' appears in the string below.\n\nString:\nbddzxkeewbngxewxlxoekefoktubxg",
+     "true": 5,
+     "pred": 6,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 19 items, green box with 10, blue box with 15. Add 7 items to the green box. Remove 5 items from the red box. Add 5 items to the green box. Swap the contents of the blue and red boxes. Swap the contents of the red and blue boxes. Remove 9 items from the red box.\n\nHow many items end up in the blue box?",
+     "true": 15,
+     "pred": 15,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'l' appears in the string below.\n\nString:\noamoexfkllmgewhllslksuhdycxslq",
+     "true": 6,
+     "pred": 7,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "7",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 572. Multiply by 9. Add 278. Add 943. Multiply by 4.",
+     "true": 25476,
+     "pred": 25736,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "25736",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 339. Multiply by 4. Multiply by 8. Subtract 769. Multiply by 5.",
+     "true": 50395,
+     "pred": 50315,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "50315",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 348. Add 61. Multiply by 3. Subtract 510. Multiply by 3.",
+     "true": 2151,
+     "pred": 2157,
+     "confidence": 95,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2157",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'i' appears in the string below.\n\nString:\nlyraugcodiiqzkytigvivffivptkib",
+     "true": 6,
+     "pred": 7,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "7",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 865. Multiply by 5. Subtract 618. Add 218. Add 678.",
+     "true": 4603,
+     "pred": 4603,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4603",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      1,
+      4,
+      8,
+      9
+     ],
+     "perm": null,
+     "finals": [
+      2,
+      19,
+      4224,
+      2,
+      6,
+      15,
+      7,
+      25476,
+      50395,
+      2157,
+      7,
+      4603
+     ],
+     "score": 7,
+     "net_score": 7.0,
+     "adoption": [
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, let me identify which ones are most likely to have errors by re-checking my work mentally.\n\nLet me spot-check a few calculations:\n\nItem 9: 339*4=1356, *8=10848, -769=10079, *5=50395 (differs from my answer 50315)\n\nItem 8: 572*9=5148, +278=5426, +943=6369, *4=25476 (differs from my answer 25736)\n\nItem 3: 690*7=4830, +654=5484, -609=4875, -651=4224 (matches)\n\nItem 12: 865*5=4325, -618=3707, +218=3925, +678=4603 (matches)\n\nThese recalculations suggest items 8 and 9 have errors worth verifying. Let me also check box tracking items 1 and 4 which are complex.\n\n{\"verify\": [1, 4, 8, 9]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "2",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "2",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "25476",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "50395",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55006
+  },
+  {
+   "tentative": [
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 's' appears in the string below.\n\nString:\nysaoscbkqktbcznrortmlnussezyrj",
+     "true": 4,
+     "pred": 5,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 16 items, green box with 9, blue box with 17. Remove 7 items from the green box. Remove 8 items from the blue box. Remove 1 items from the green box. Swap the contents of the blue and green boxes. Swap the contents of the green and blue boxes. Move 4 items from the blue box to the green box.\n\nHow many items end up in the green box?",
+     "true": 5,
+     "pred": 5,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 668. Multiply by 3. Subtract 734. Subtract 214. Subtract 902.",
+     "true": 154,
+     "pred": 154,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "154",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'h' appears in the string below.\n\nString:\nkghhkhdfisdaqsjtixjipijxoohzlj",
+     "true": 4,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 19 items, green box with 20, blue box with 8. Swap the contents of the blue and green boxes. Swap the contents of the red and blue boxes. Swap the contents of the red and green boxes. Remove 5 items from the green box. Remove 3 items from the green box. Remove 3 items from the red box.\n\nHow many items end up in the green box?",
+     "true": 12,
+     "pred": 12,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 8 items, green box with 6, blue box with 13. Remove 2 items from the blue box. Remove 1 items from the blue box. Swap the contents of the green and blue boxes. Swap the contents of the blue and green boxes. Move 4 items from the blue box to the red box. Remove 3 items from the blue box.\n\nHow many items end up in the green box?",
+     "true": 6,
+     "pred": 6,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 239. Add 664. Add 179. Add 184. Add 515.",
+     "true": 1781,
+     "pred": 1781,
+     "confidence": 35,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1781",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'o' appears in the string below.\n\nString:\nkuetyzxtrpciowymjcoexevvuqvofj",
+     "true": 3,
+     "pred": 3,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 360. Add 599. Add 692. Multiply by 7. Add 348.",
+     "true": 11905,
+     "pred": 11135,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "11135",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 6 items, green box with 18, blue box with 16. Swap the contents of the blue and green boxes. Move 2 items from the green box to the red box. Add 5 items to the green box. Move 3 items from the red box to the green box. Add 7 items to the red box. Remove 4 items from the red box.\n\nHow many items end up in the red box?",
+     "true": 8,
+     "pred": 14,
+     "confidence": 85,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "14",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 350. Multiply by 4. Add 531. Subtract 950. Subtract 485.",
+     "true": 496,
+     "pred": 796,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "796",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 651. Add 639. Add 251. Subtract 397. Subtract 471.",
+     "true": 673,
+     "pred": 673,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "673",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      9,
+      11,
+      10,
+      5
+     ],
+     "perm": null,
+     "finals": [
+      5,
+      5,
+      154,
+      4,
+      12,
+      6,
+      1781,
+      3,
+      11905,
+      8,
+      496,
+      673
+     ],
+     "score": 11,
+     "net_score": 11.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll identify the ones most likely to have errors - particularly the multi-step tracking problems and calculations that require careful arithmetic.\n\nLet me quickly re-verify a few mentally:\n\nItem 9: 360+599=959, +692=1651, *7=11557, +348=11905 (differs from 11135)\n\nItem 11: 350*4=1400, +531=1931, -950=981, -485=496 (differs from 796)\n\nItem 6: Red=8, green=6, blue=13. Remove 2 from blue=11, remove 1=10. Swap green/blue: green=10,blue=6. Swap blue/green: green=6,blue=10. Move 4 from blue to red: red=12,blue=6. Remove 3 from blue=3. Green=6 (matches!)\n\nItem 10: Red=6,green=18,blue=16. Swap blue/green: green=16,blue=18. Move 2 from green to red: green=14,red=8. Add 5 to green=19. Move 3 from red to green: red=5,green=22. Add 7 to red=12. Remove 4 from red=8 (differs from 14)\n\nThese calculations show discrepancies worth checking.\n\n{\"verify\": [9, 11, 10, 5]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "11905",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "496",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55007
+  },
+  {
+   "tentative": [
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 13 items, green box with 13, blue box with 11. Move 9 items from the blue box to the red box. Swap the contents of the blue and red boxes. Swap the contents of the blue and red boxes. Remove 7 items from the green box. Move 1 items from the blue box to the green box. Add 7 items to the blue box.\n\nHow many items end up in the blue box?",
+     "true": 8,
+     "pred": 8,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 822. Subtract 186. Add 694. Subtract 501. Add 282.",
+     "true": 1111,
+     "pred": 1111,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1111",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 484. Multiply by 8. Subtract 210. Subtract 165. Multiply by 8.",
+     "true": 27976,
+     "pred": 23888,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "23888",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 627. Subtract 586. Add 842. Add 674. Subtract 454.",
+     "true": 1103,
+     "pred": 1103,
+     "confidence": 35,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1103",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 6 items, green box with 14, blue box with 8. Add 2 items to the red box. Swap the contents of the red and blue boxes. Add 7 items to the green box. Move 1 items from the green box to the blue box. Move 5 items from the blue box to the red box. Add 4 items to the red box.\n\nHow many items end up in the red box?",
+     "true": 17,
+     "pred": 17,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'i' appears in the string below.\n\nString:\niytigtxjrvjiuihbvrbqiepgkkpmjy",
+     "true": 5,
+     "pred": 5,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 260. Add 242. Subtract 946. Multiply by 4. Add 794.",
+     "true": -982,
+     "pred": -970,
+     "confidence": 95,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-970",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'r' appears in the string below.\n\nString:\nmnojihorsowcmscnaaurpdrrwfpytk",
+     "true": 4,
+     "pred": 5,
+     "confidence": 45,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "45",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 494. Subtract 73. Subtract 207. Multiply by 3. Add 96.",
+     "true": 738,
+     "pred": 738,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "738",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 13 items, green box with 18, blue box with 19. Swap the contents of the blue and green boxes. Remove 2 items from the red box. Move 4 items from the green box to the red box. Swap the contents of the blue and green boxes. Add 3 items to the blue box. Swap the contents of the red and blue boxes.\n\nHow many items end up in the blue box?",
+     "true": 15,
+     "pred": 11,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "11",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'a' appears in the string below.\n\nString:\nyuxbaeaazzasgwdmpaanenkspybkao",
+     "true": 7,
+     "pred": 8,
+     "confidence": 45,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "45",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 7 items, green box with 9, blue box with 15. Move 4 items from the red box to the blue box. Swap the contents of the blue and red boxes. Remove 9 items from the green box. Move 9 items from the red box to the blue box. Add 1 items to the red box. Add 6 items to the red box.\n\nHow many items end up in the green box?",
+     "true": 0,
+     "pred": 0,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "0",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      3,
+      7,
+      10,
+      5
+     ],
+     "perm": null,
+     "finals": [
+      8,
+      1111,
+      27976,
+      1103,
+      17,
+      5,
+      -982,
+      5,
+      738,
+      15,
+      8,
+      0
+     ],
+     "score": 10,
+     "net_score": 10.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll prioritize verifying the ones most likely to have errors - complex multi-step tracking problems and calculations that seem error-prone.\n\nLet me quickly recheck a few:\n\nItem 1: Red=13,Green=13,Blue=11. Move 9 blue\u2192red: Red=22,Blue=2. Swap blue/red: Red=2,Blue=22. Swap again: Red=22,Blue=2. Green-7=6. Move 1 blue\u2192green: Blue=1,Green=7. Add 7 blue: Blue=8. Matches.\n\nItem 3: 484*8=3872. -210=3662. -165=3497. *8=27976. My answer 23888 is wrong.\n\nItem 7: 260+242=502. -946=-444. *4=-1776. +794=-982. My answer -970 is wrong.\n\nItem 9: 494-73=421. -207=214. *3=642. +96=738. Matches.\n\nItem 12: Red=7,Green=9,Blue=15. Move4 red\u2192blue: Red=3,Blue=19. Swap blue/red: Red=19,Blue=3. Green-9=0. Move9 red\u2192blue: Red=10,Blue=12. Add1 red=11. Add6 red=17. Green=0. Matches.\n\nI found errors in items 3 and 7. Let me verify those plus two more uncertain ones.\n\n{\"verify\": [3, 7, 10, 5]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "27976",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "-982",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55008
+  },
+  {
+   "tentative": [
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 15 items, green box with 7, blue box with 9. Add 7 items to the red box. Add 7 items to the red box. Swap the contents of the green and blue boxes. Swap the contents of the red and green boxes. Add 4 items to the green box. Swap the contents of the blue and green boxes.\n\nHow many items end up in the red box?",
+     "true": 9,
+     "pred": 9,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 184. Multiply by 4. Add 96. Subtract 374. Add 344.",
+     "true": 802,
+     "pred": 802,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "802",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'e' appears in the string below.\n\nString:\nsepxpzqkizqeypkmxtsuelegcntqqf",
+     "true": 4,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'a' appears in the string below.\n\nString:\nezddtbbkbuvoujzjvvaosurpxyohug",
+     "true": 1,
+     "pred": 1,
+     "confidence": 70,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "70",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 6 items, green box with 11, blue box with 8. Add 9 items to the red box. Remove 3 items from the blue box. Swap the contents of the red and blue boxes. Add 3 items to the green box. Remove 1 items from the red box. Swap the contents of the green and blue boxes.\n\nHow many items end up in the green box?",
+     "true": 15,
+     "pred": 4,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 5, blue box with 9. Move 2 items from the green box to the red box. Move 2 items from the red box to the blue box. Remove 1 items from the red box. Remove 8 items from the blue box. Swap the contents of the green and red boxes. Move 1 items from the blue box to the red box.\n\nHow many items end up in the green box?",
+     "true": 11,
+     "pred": 11,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "11",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 186. Multiply by 6. Add 896. Add 236. Add 502.",
+     "true": 2750,
+     "pred": 2750,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2750",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 't' appears in the string below.\n\nString:\ncxvtjuwfwdvtrttynqfkuhhiurtzkw",
+     "true": 5,
+     "pred": 6,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 662. Subtract 346. Subtract 785. Subtract 299. Subtract 859.",
+     "true": -1627,
+     "pred": -1627,
+     "confidence": 85,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-1627",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 927. Add 357. Subtract 150. Add 162. Multiply by 5.",
+     "true": 6480,
+     "pred": 6480,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6480",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 11 items, green box with 16, blue box with 17. Remove 9 items from the green box. Add 6 items to the red box. Move 7 items from the red box to the green box. Add 1 items to the red box. Move 3 items from the green box to the blue box. Remove 7 items from the blue box.\n\nHow many items end up in the green box?",
+     "true": 11,
+     "pred": 17,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 826. Subtract 790. Add 884. Add 77. Add 347.",
+     "true": 1344,
+     "pred": 1344,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1344",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      11,
+      3,
+      4,
+      8
+     ],
+     "perm": null,
+     "finals": [
+      9,
+      802,
+      4,
+      1,
+      4,
+      11,
+      2750,
+      5,
+      -1627,
+      6480,
+      11,
+      1344
+     ],
+     "score": 11,
+     "net_score": 11.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll identify which ones have the highest risk of error based on complexity and number of steps.\n\nLet me quickly re-check some calculations mentally:\n\nItem 1: Red=15+7+7=29, Green=7, Blue=9. Swap g/b: Green=9,Blue=7. Swap r/g: Red=9,Green=29. Add 4 to green: Green=33. Swap b/g: Blue=33, Green=7. Red stays 9. Matches.\n\nItem 9: 662-346=316, -785=-469, -299=-768, -859=-1627. Matches.\n\nItem 10: 927+357=1284, -150=1134, +162=1296, *5=6480. Matches.\n\nItem 6: Red=12,Green=5,Blue=9. Move 2 g->r: Red=14,Green=3. Move 2 r->b: Red=12,Blue=11. Remove 1 from red: Red=11. Remove 8 from blue: Blue=3. Swap g/r: Green=11,Red=3. Move 1 b->r: Blue=2,Red=4. Green=11. Matches tentative.\n\nItem 11: Red=11,Green=16,Blue=17. Remove 9 green: Green=7. Add 6 red: Red=17. Move 7 r->g: Red=10,Green=14. Add 1 red: Red=11. Move 3 g->b: Green=11,Blue=20. Remove 7 blue: Blue=13. Green=11, not 17! This differs from tentative answer.\n\nI'll verify items with highest suspicion of error.\n\n{\"verify\": [11, 3, 4, 8]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "11",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55009
+  },
+  {
+   "tentative": [
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 19 items, green box with 5, blue box with 16. Swap the contents of the green and red boxes. Move 4 items from the green box to the red box. Swap the contents of the green and red boxes. Move 3 items from the red box to the blue box. Swap the contents of the red and green boxes. Move 2 items from the red box to the green box.\n\nHow many items end up in the green box?",
+     "true": 14,
+     "pred": 20,
+     "confidence": 35,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 594. Multiply by 5. Multiply by 9. Subtract 198. Add 587.",
+     "true": 27119,
+     "pred": 27059,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "27059",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 625. Multiply by 6. Add 883. Subtract 531. Subtract 892.",
+     "true": 3210,
+     "pred": 3210,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3210",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 938. Add 212. Add 355. Subtract 642. Multiply by 5.",
+     "true": 4315,
+     "pred": 4315,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4315",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 255. Add 313. Add 578. Multiply by 3. Add 668.",
+     "true": 4106,
+     "pred": 4256,
+     "confidence": 35,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4256",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 't' appears in the string below.\n\nString:\nxjknijuvrtphitztuptgwiftwxqjit",
+     "true": 6,
+     "pred": 8,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 8 items, green box with 18, blue box with 6. Add 9 items to the red box. Move 1 items from the green box to the red box. Remove 8 items from the green box. Move 7 items from the green box to the red box. Add 3 items to the blue box. Swap the contents of the red and blue boxes.\n\nHow many items end up in the green box?",
+     "true": 2,
+     "pred": 2,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'h' appears in the string below.\n\nString:\nayyhlygvqhjterlpthotbihuuglxbk",
+     "true": 4,
+     "pred": 5,
+     "confidence": 45,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "45",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 611. Multiply by 7. Multiply by 3. Subtract 922. Add 703.",
+     "true": 12612,
+     "pred": 12612,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12612",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 7, blue box with 15. Remove 4 items from the blue box. Move 3 items from the blue box to the green box. Remove 6 items from the red box. Swap the contents of the blue and green boxes. Add 6 items to the red box. Add 6 items to the red box.\n\nHow many items end up in the red box?",
+     "true": 18,
+     "pred": 18,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "18",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'o' appears in the string below.\n\nString:\ntarmbqgepnhomypvzmirhhcgkomzcm",
+     "true": 2,
+     "pred": 2,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 15 items, green box with 6, blue box with 12. Swap the contents of the red and blue boxes. Move 9 items from the blue box to the green box. Add 4 items to the red box. Add 9 items to the green box. Move 2 items from the blue box to the red box. Add 4 items to the green box.\n\nHow many items end up in the red box?",
+     "true": 18,
+     "pred": 18,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "18",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      1,
+      2,
+      6,
+      12
+     ],
+     "perm": null,
+     "finals": [
+      14,
+      27119,
+      3210,
+      4315,
+      4256,
+      6,
+      2,
+      5,
+      12612,
+      18,
+      2,
+      18
+     ],
+     "score": 10,
+     "net_score": 10.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Let me quickly re-verify some calculations mentally to decide which are risky.\n\nItem 2: 594*5=2970*9=26730-198=26532+587=27119 (differs from 20 answer, likely error)\nItem 9: 611*7=4277*3=12831-922=11909+703=12612 (matches)\nItem 6: let me count t's - risky, string counting often errors.\nItem 1: box tracking is complex and error-prone.\n\n{\"verify\": [1, 2, 6, 12]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "14",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "27119",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "18",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55010
+  },
+  {
+   "tentative": [
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'h' appears in the string below.\n\nString:\nkhjzbitjhdbcuvgklsadhjroltmhmw",
+     "true": 4,
+     "pred": 5,
+     "confidence": 55,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 11 items, green box with 13, blue box with 11. Move 5 items from the blue box to the green box. Swap the contents of the green and blue boxes. Add 7 items to the blue box. Remove 2 items from the green box. Swap the contents of the red and blue boxes. Remove 1 items from the green box.\n\nHow many items end up in the green box?",
+     "true": 3,
+     "pred": 15,
+     "confidence": 85,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 722. Add 914. Multiply by 5. Add 111. Subtract 296.",
+     "true": 7995,
+     "pred": 8995,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8995",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 377. Add 583. Add 912. Multiply by 8. Subtract 827.",
+     "true": 14149,
+     "pred": 14229,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "14229",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 628. Add 154. Add 547. Subtract 729. Subtract 930.",
+     "true": -330,
+     "pred": -330,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-330",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'r' appears in the string below.\n\nString:\naiwfvsvlrstdcrpqrrvxenvzroqgsn",
+     "true": 5,
+     "pred": 5,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 13 items, green box with 9, blue box with 10. Add 8 items to the green box. Move 2 items from the red box to the green box. Move 1 items from the green box to the red box. Add 5 items to the green box. Add 2 items to the blue box. Swap the contents of the blue and red boxes.\n\nHow many items end up in the red box?",
+     "true": 12,
+     "pred": 12,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 9 items, green box with 5, blue box with 20. Add 8 items to the green box. Move 6 items from the blue box to the green box. Remove 4 items from the red box. Move 3 items from the red box to the blue box. Move 2 items from the red box to the green box. Move 3 items from the blue box to the red box.\n\nHow many items end up in the red box?",
+     "true": 3,
+     "pred": 3,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'a' appears in the string below.\n\nString:\navrlpcywhzdlnaeatruajpswdnebco",
+     "true": 4,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 6 items, green box with 16, blue box with 7. Move 1 items from the blue box to the green box. Swap the contents of the red and blue boxes. Add 1 items to the red box. Swap the contents of the red and green boxes. Move 3 items from the blue box to the green box. Add 6 items to the red box.\n\nHow many items end up in the green box?",
+     "true": 10,
+     "pred": 10,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "10",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 594. Add 820. Add 677. Multiply by 9. Multiply by 9.",
+     "true": 169371,
+     "pred": 170343,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "170343",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 458. Subtract 479. Subtract 419. Add 881. Subtract 767.",
+     "true": -326,
+     "pred": -326,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-326",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      3,
+      4,
+      11,
+      12
+     ],
+     "perm": null,
+     "finals": [
+      5,
+      15,
+      7995,
+      14149,
+      -330,
+      5,
+      12,
+      3,
+      4,
+      10,
+      169371,
+      -326
+     ],
+     "score": 10,
+     "net_score": 10.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll prioritize verifying the multi-step tracking problems and calculations, as they have higher chances of accumulated errors.\n\nLet me quickly re-verify some mentally:\n\nItem 8: Red=9,Green=5,Blue=20. Add 8 to green(13). Move 6 blue\u2192green(blue14,green19). Remove 4 red(5). Move 3 red\u2192blue(red2,blue17). Move 2 red\u2192green(red0,green21). Move 3 blue\u2192red(red3,blue14). Red=3. Matches.\n\nItem 10: Red=6,Green=16,Blue=7. Move1 blue\u2192green(blue6,green17). Swap red/blue(red6,blue6\u2192 red=6,blue=6... wait red was 6, blue 6, swap does nothing visible but let's track: red=6,blue=6). Add1 red(red=7). Swap red/green(red=17,green=7). Move3 blue\u2192green(blue=3,green=10). Add6 red(red=23). Green=10. Matches.\n\nItem 3: 722+914=1636*5=8180+111=8291-296=7995. My answer was 8995 - discrepancy!\n\nItem 4: 377+583+912=1872*8=14976-827=14149. My answer 14229 - discrepancy!\n\n{\"verify\": [3, 4, 11, 12]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "7995",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "14149",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "169371",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "-326",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55011
+  },
+  {
+   "tentative": [
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 7 items, green box with 11, blue box with 20. Move 5 items from the green box to the red box. Remove 3 items from the green box. Move 1 items from the green box to the blue box. Move 2 items from the green box to the red box. Add 6 items to the blue box. Remove 3 items from the red box.\n\nHow many items end up in the blue box?",
+     "true": 27,
+     "pred": 27,
+     "confidence": 85,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "27",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 10 items, green box with 16, blue box with 5. Move 6 items from the red box to the blue box. Add 5 items to the green box. Remove 7 items from the green box. Add 3 items to the blue box. Swap the contents of the green and blue boxes. Swap the contents of the green and red boxes.\n\nHow many items end up in the green box?",
+     "true": 4,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 308. Add 250. Multiply by 6. Multiply by 4. Multiply by 7.",
+     "true": 93744,
+     "pred": 93744,
+     "confidence": 15,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "93744",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 336. Multiply by 4. Add 841. Add 262. Subtract 714.",
+     "true": 1733,
+     "pred": 733,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "733",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'a' appears in the string below.\n\nString:\nlaawaqmaavbhdyaasvtyvnyavsahoa",
+     "true": 10,
+     "pred": 10,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "10",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 20 items, green box with 20, blue box with 9. Swap the contents of the red and green boxes. Remove 7 items from the red box. Move 4 items from the green box to the blue box. Add 2 items to the red box. Swap the contents of the green and blue boxes. Swap the contents of the green and red boxes.\n\nHow many items end up in the green box?",
+     "true": 15,
+     "pred": 15,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'o' appears in the string below.\n\nString:\nmofcxynsxzahmiiniosamcrooeeydy",
+     "true": 4,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 326. Subtract 360. Multiply by 4. Multiply by 8. Subtract 514.",
+     "true": -1602,
+     "pred": -1602,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-1602",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 5 items, green box with 15, blue box with 6. Swap the contents of the green and red boxes. Add 7 items to the red box. Add 7 items to the green box. Remove 5 items from the red box. Swap the contents of the blue and red boxes. Remove 1 items from the blue box.\n\nHow many items end up in the green box?",
+     "true": 12,
+     "pred": 22,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "22",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 320. Multiply by 3. Multiply by 8. Subtract 145. Add 829.",
+     "true": 8364,
+     "pred": 8364,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8364",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'o' appears in the string below.\n\nString:\nbwegqmtsgqqwbooemquoxvuhctsoao",
+     "true": 5,
+     "pred": 5,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 981. Add 462. Add 438. Multiply by 7. Multiply by 5.",
+     "true": 65835,
+     "pred": 66185,
+     "confidence": 85,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "66185",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      12,
+      9,
+      6,
+      2
+     ],
+     "perm": null,
+     "finals": [
+      27,
+      4,
+      93744,
+      733,
+      10,
+      15,
+      4,
+      -1602,
+      12,
+      8364,
+      5,
+      65835
+     ],
+     "score": 11,
+     "net_score": 11.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Let me analyze which items are most likely to have errors by re-checking my work mentally.\n\nItem 3: 308+250=558, *6=3348, *4=13392, *7=93744 \u2713 seems right\nItem 8: 326-360=-34, *4=-136, *8=-1088, -514=-1602 \u2713\nItem 12: 981+462=1443, +438=1881, *7=13167, *5=65835 (I got 66185, likely error)\nItem 9: complex tracking, worth checking\n\n{\"verify\": [12, 9, 6, 2]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "65835",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55012
+  },
+  {
+   "tentative": [
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 592. Add 794. Add 742. Subtract 77. Multiply by 6.",
+     "true": 12306,
+     "pred": 12306,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12306",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 6 items, green box with 10, blue box with 15. Swap the contents of the green and red boxes. Add 7 items to the red box. Swap the contents of the blue and red boxes. Remove 5 items from the red box. Move 3 items from the green box to the red box. Remove 4 items from the blue box.\n\nHow many items end up in the red box?",
+     "true": 13,
+     "pred": 13,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "13",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'h' appears in the string below.\n\nString:\nkuojhhhfcmkdthprautfbtmvncqczw",
+     "true": 4,
+     "pred": 5,
+     "confidence": 55,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 834. Add 606. Subtract 323. Add 260. Subtract 897.",
+     "true": 480,
+     "pred": 480,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "480",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'e' appears in the string below.\n\nString:\nvmekrawajkedweekbjrlzgahqfvihi",
+     "true": 4,
+     "pred": 5,
+     "confidence": 55,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 550. Subtract 475. Add 384. Subtract 282. Add 536.",
+     "true": 713,
+     "pred": 713,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "713",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'i' appears in the string below.\n\nString:\nmvpslzmdofiupqskfqnffqzdzxoqvw",
+     "true": 1,
+     "pred": 1,
+     "confidence": 75,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "75",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 11 items, green box with 11, blue box with 19. Move 9 items from the red box to the blue box. Move 1 items from the red box to the green box. Swap the contents of the green and blue boxes. Swap the contents of the green and red boxes. Swap the contents of the red and green boxes. Add 2 items to the green box.\n\nHow many items end up in the blue box?",
+     "true": 12,
+     "pred": 28,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "28",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 18 items, green box with 9, blue box with 19. Move 3 items from the blue box to the red box. Add 5 items to the red box. Move 1 items from the blue box to the red box. Swap the contents of the blue and red boxes. Add 1 items to the blue box. Add 4 items to the red box.\n\nHow many items end up in the red box?",
+     "true": 19,
+     "pred": 19,
+     "confidence": 20,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "19",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 6 items, green box with 13, blue box with 6. Add 2 items to the blue box. Add 7 items to the green box. Remove 2 items from the red box. Remove 2 items from the red box. Remove 1 items from the green box. Add 3 items to the blue box.\n\nHow many items end up in the green box?",
+     "true": 19,
+     "pred": 19,
+     "confidence": 100,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "19",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "100",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 174. Add 492. Subtract 609. Subtract 258. Subtract 87.",
+     "true": -288,
+     "pred": -288,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-288",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 730. Multiply by 8. Subtract 679. Subtract 198. Subtract 836.",
+     "true": 4127,
+     "pred": 4127,
+     "confidence": 35,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4127",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      2,
+      8,
+      9,
+      10
+     ],
+     "perm": null,
+     "finals": [
+      12306,
+      13,
+      5,
+      480,
+      5,
+      713,
+      1,
+      12,
+      19,
+      19,
+      -288,
+      4127
+     ],
+     "score": 10,
+     "net_score": 10.0,
+     "adoption": [
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Let me analyze which items are most likely to have errors by re-checking my work mentally.\n\nItem 1: 592+794=1386, +742=2128, -77=2051, *6=12306 \u2713 seems right\nItem 8: Complex box tracking with multiple swaps - high error risk\nItem 9: Complex box tracking - moderate risk\nItem 2: Complex box tracking - moderate risk\n\nLet me verify the trickiest tracking problems and one calculation.\n\n{\"verify\": [2, 8, 9, 10]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "13",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "19",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "19",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55013
+  },
+  {
+   "tentative": [
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 's' appears in the string below.\n\nString:\nszfasmxknfbfyncbswkjqlsdfrodsn",
+     "true": 5,
+     "pred": 5,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 376. Multiply by 6. Add 527. Add 915. Subtract 793.",
+     "true": 2905,
+     "pred": 2905,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2905",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 934. Multiply by 3. Subtract 309. Subtract 740. Subtract 944.",
+     "true": 809,
+     "pred": 809,
+     "confidence": 45,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "809",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "45",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 18 items, green box with 11, blue box with 11. Remove 9 items from the red box. Remove 8 items from the blue box. Add 5 items to the blue box. Swap the contents of the red and blue boxes. Swap the contents of the green and red boxes. Add 1 items to the green box.\n\nHow many items end up in the blue box?",
+     "true": 9,
+     "pred": 9,
+     "confidence": 85,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'r' appears in the string below.\n\nString:\nrwraoizbrrdssvrgurkprrbolmrbdr",
+     "true": 10,
+     "pred": 11,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "11",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'n' appears in the string below.\n\nString:\nwnpzdtvjfxvrolitvyckjrlsjzdogs",
+     "true": 1,
+     "pred": 1,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 11 items, green box with 9, blue box with 19. Remove 6 items from the red box. Move 8 items from the blue box to the green box. Swap the contents of the green and blue boxes. Swap the contents of the green and blue boxes. Move 5 items from the red box to the blue box. Swap the contents of the green and blue boxes.\n\nHow many items end up in the red box?",
+     "true": 0,
+     "pred": 0,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "0",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 16 items, green box with 16, blue box with 12. Remove 1 items from the red box. Swap the contents of the green and red boxes. Swap the contents of the red and green boxes. Move 1 items from the green box to the red box. Add 4 items to the red box. Swap the contents of the blue and green boxes.\n\nHow many items end up in the green box?",
+     "true": 12,
+     "pred": 15,
+     "confidence": 65,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 227. Add 664. Multiply by 3. Add 783. Add 107.",
+     "true": 3563,
+     "pred": 3563,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3563",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 350. Add 39. Multiply by 8. Add 982. Subtract 936.",
+     "true": 3158,
+     "pred": 3158,
+     "confidence": 35,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3158",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 493. Add 957. Subtract 899. Add 735. Add 760.",
+     "true": 2046,
+     "pred": 2046,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2046",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 9 items, green box with 13, blue box with 17. Swap the contents of the green and blue boxes. Remove 4 items from the red box. Add 4 items to the green box. Remove 4 items from the blue box. Move 4 items from the green box to the red box. Swap the contents of the red and green boxes.\n\nHow many items end up in the green box?",
+     "true": 9,
+     "pred": 9,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      6,
+      7,
+      8,
+      12
+     ],
+     "perm": null,
+     "finals": [
+      5,
+      2905,
+      809,
+      9,
+      11,
+      1,
+      0,
+      12,
+      3563,
+      3158,
+      2046,
+      9
+     ],
+     "score": 11,
+     "net_score": 11.0,
+     "adoption": [
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll prioritize verifying the ones most likely to have errors - particularly the multi-step tracking problems and letter counting, which are prone to mistakes.\n\nLet me quickly recheck a few:\n\nItem 6: \"wnpzdtvjfxvrolitvyckjrlsjzdogs\" - counting 'n': w-n-p-z-d-t-v-j-f-x-v-r-o-l-i-t-v-y-c-k-j-r-l-s-j-z-d-o-g-s - only 1 'n' seems low, let me verify.\n\nItem 7: Complex box tracking with multiple swaps - high risk of error.\n\nItem 8: Complex box tracking with multiple swaps - high risk of error.\n\nItem 12: Complex box tracking with multiple swaps - high risk of error.\n\nThese tracking problems with swaps are notoriously error-prone due to the need to carefully track state changes.\n\n{\"verify\": [6, 7, 8, 12]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "0",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55014
+  },
+  {
+   "tentative": [
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 367. Multiply by 5. Multiply by 5. Subtract 506. Multiply by 9.",
+     "true": 78021,
+     "pred": 78921,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "78921",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 't' appears in the string below.\n\nString:\nrtintbsbhcedldptuctmhijcfjbetj",
+     "true": 5,
+     "pred": 6,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 9, blue box with 8. Move 2 items from the blue box to the green box. Add 6 items to the red box. Move 3 items from the blue box to the red box. Add 7 items to the blue box. Swap the contents of the red and blue boxes. Swap the contents of the blue and green boxes.\n\nHow many items end up in the red box?",
+     "true": 10,
+     "pred": 8,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 173. Subtract 846. Subtract 839. Add 394. Multiply by 5.",
+     "true": -5590,
+     "pred": -5590,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-5590",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 920. Add 348. Multiply by 7. Subtract 151. Multiply by 5.",
+     "true": 43625,
+     "pred": 44685,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "44685",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 8 items, green box with 15, blue box with 11. Move 5 items from the red box to the green box. Move 5 items from the blue box to the green box. Move 2 items from the red box to the green box. Remove 2 items from the blue box. Remove 6 items from the green box. Add 8 items to the blue box.\n\nHow many items end up in the blue box?",
+     "true": 12,
+     "pred": 12,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 142. Add 666. Multiply by 8. Add 305. Subtract 702.",
+     "true": 6067,
+     "pred": 6067,
+     "confidence": 35,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6067",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 13 items, green box with 13, blue box with 15. Swap the contents of the green and red boxes. Move 4 items from the red box to the blue box. Add 2 items to the green box. Add 3 items to the blue box. Remove 2 items from the blue box. Remove 5 items from the blue box.\n\nHow many items end up in the red box?",
+     "true": 9,
+     "pred": 9,
+     "confidence": 100,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "100",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'a' appears in the string below.\n\nString:\ntqrocarqctrqflujaeaiamljfuazgf",
+     "true": 5,
+     "pred": 6,
+     "confidence": 55,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 13, blue box with 20. Remove 2 items from the blue box. Move 6 items from the green box to the red box. Move 4 items from the green box to the blue box. Add 1 items to the blue box. Add 6 items to the green box. Move 2 items from the green box to the red box.\n\nHow many items end up in the green box?",
+     "true": 7,
+     "pred": 7,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "7",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'l' appears in the string below.\n\nString:\nllllvklvxphvlwpyqlklddykixrovp",
+     "true": 8,
+     "pred": 7,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "7",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 205. Add 696. Add 410. Subtract 621. Subtract 687.",
+     "true": 3,
+     "pred": 3,
+     "confidence": 20,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      1,
+      3,
+      8,
+      9
+     ],
+     "perm": null,
+     "finals": [
+      78021,
+      6,
+      10,
+      -5590,
+      44685,
+      12,
+      6067,
+      9,
+      5,
+      7,
+      7,
+      3
+     ],
+     "score": 9,
+     "net_score": 9.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, let me identify which ones are most likely to have errors by re-checking mentally.\n\nItem 1: 367*5=1835, *5=9175, -506=8669, *9=78021. My answer 78921 seems off.\n\nItem 3: Let me retrace - complex box tracking with swaps, prone to error.\n\nItem 8: Multiple swaps and operations, prone to error.\n\nItem 9: Let me count 'a' in \"tqrocarqctrqflujaeaiamljfuazgf\" - positions: c-a-r(1), j-a(2), e-a(3), i-a(4), m-a(5), a-z... let me recount: t,q,r,o,c,a,r,q,c,t,r,q,f,l,u,j,a,e,a,i,a,m,l,j,f,u,a,z,g,f - a's at positions 6,17,19,21,27 = 5, not 6.\n\n{\"verify\": [1, 3, 8, 9]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "78021",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "10",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55015
+  },
+  {
+   "tentative": [
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 14 items, green box with 11, blue box with 6. Remove 6 items from the red box. Move 9 items from the green box to the red box. Remove 6 items from the blue box. Swap the contents of the green and red boxes. Remove 1 items from the red box. Add 3 items to the blue box.\n\nHow many items end up in the green box?",
+     "true": 17,
+     "pred": 17,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 754. Subtract 219. Multiply by 5. Multiply by 7. Subtract 979.",
+     "true": 17746,
+     "pred": 17746,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "17746",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'h' appears in the string below.\n\nString:\nqthuhdkfhknthpxhrmiogdndrndqgd",
+     "true": 5,
+     "pred": 5,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 247. Multiply by 9. Multiply by 9. Add 155. Subtract 364.",
+     "true": 19798,
+     "pred": 19798,
+     "confidence": 20,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "19798",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 811. Add 676. Subtract 303. Add 137. Subtract 546.",
+     "true": 775,
+     "pred": 775,
+     "confidence": 35,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "775",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 729. Multiply by 4. Add 646. Subtract 545. Add 425.",
+     "true": 3442,
+     "pred": 3442,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3442",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'r' appears in the string below.\n\nString:\nilgifgmwiwqaiaejuodkgrojhfkjuf",
+     "true": 1,
+     "pred": 1,
+     "confidence": 75,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "75",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 16, blue box with 14. Move 4 items from the red box to the blue box. Move 1 items from the red box to the green box. Move 8 items from the blue box to the red box. Remove 1 items from the blue box. Swap the contents of the red and green boxes. Move 9 items from the red box to the blue box.\n\nHow many items end up in the blue box?",
+     "true": 18,
+     "pred": 26,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "26",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 16 items, green box with 9, blue box with 6. Remove 8 items from the red box. Remove 6 items from the blue box. Remove 7 items from the red box. Add 6 items to the green box. Add 8 items to the green box. Move 1 items from the red box to the blue box.\n\nHow many items end up in the blue box?",
+     "true": 1,
+     "pred": 1,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 366. Multiply by 5. Multiply by 4. Subtract 806. Subtract 233.",
+     "true": 6281,
+     "pred": 6281,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6281",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 7 items, green box with 8, blue box with 17. Swap the contents of the green and red boxes. Remove 5 items from the green box. Swap the contents of the blue and green boxes. Move 1 items from the blue box to the red box. Add 8 items to the green box. Remove 1 items from the blue box.\n\nHow many items end up in the red box?",
+     "true": 9,
+     "pred": 8,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 's' appears in the string below.\n\nString:\njcsdbltzlyshkzyonyouijsuixlzyq",
+     "true": 3,
+     "pred": 4,
+     "confidence": 55,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      1,
+      8,
+      9,
+      11
+     ],
+     "perm": null,
+     "finals": [
+      17,
+      17746,
+      5,
+      19798,
+      775,
+      3442,
+      1,
+      18,
+      1,
+      6281,
+      9,
+      4
+     ],
+     "score": 11,
+     "net_score": 11.0,
+     "adoption": [
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll prioritize verifying the ones I'm least confident about - particularly multi-step tracking problems and calculations with more steps, where errors compound.\n\nLet me quickly re-check a few mentally:\n\nItem 1: Red=14-6=8, Green=11+9=20, Blue=6-6=0. Swap green/red: Red=20, Green=8. Red=20-1=19. Blue=0+3=3. Green box = 8. My answer was 17, but recalculation gives 8. This needs verification.\n\nItem 8: Red=12-4=8(blue+4=18)-1=7(green+1=17). Blue=18+8=26, Red=7-8=-1... error possible. Complex, needs check.\n\nItem 9: Red=16-8=8-7=1. Blue=6-6=0. Green=9+6+8=23. Move 1 red to blue: Blue=0+1=1, Red=0. Blue=1. This matches my answer.\n\nItem 11: Red=7,Green=8,Blue=17. Swap green/red: Red=8,Green=7. Green=7-5=2. Swap blue/green: Blue=2,Green=17. Move 1 blue to red: Red=9,Blue=1. Green=17+8=25. Blue=1-1=0. Red=9. My answer was 8, recalculation gives 9 - needs verification.\n\n{\"verify\": [1, 8, 9, 11]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "18",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "9",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55016
+  },
+  {
+   "tentative": [
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 665. Add 648. Add 972. Multiply by 8. Add 920.",
+     "true": 19200,
+     "pred": 19240,
+     "confidence": 35,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "**19240**",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "**35**",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'i' appears in the string below.\n\nString:\niuxdobdanximgvtfvmmilbvcquiulz",
+     "true": 4,
+     "pred": 5,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 516. Multiply by 9. Multiply by 6. Multiply by 9. Keep only the last three digits (result mod 1000). Add 776.",
+     "true": 1552,
+     "pred": 252392,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "**252392**",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "**15**",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 594. Multiply by 4. Add 790. Subtract 341. Subtract 752.",
+     "true": 2073,
+     "pred": 2073,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "2073",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 694. Subtract 551. Add 47. Add 135. Multiply by 4.",
+     "true": 1300,
+     "pred": 1300,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1300",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 9 items, green box with 5, blue box with 14. Swap the contents of the green and red boxes. Add 9 items to the blue box. Remove 1 items from the green box. Add 8 items to the red box. Remove 8 items from the red box. Swap the contents of the blue and green boxes.\n\nHow many items end up in the blue box?",
+     "true": 8,
+     "pred": 8,
+     "confidence": 85,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 12 items, green box with 20, blue box with 11. Move 8 items from the blue box to the red box. Swap the contents of the green and blue boxes. Add 5 items to the green box. Swap the contents of the blue and red boxes. Swap the contents of the blue and red boxes. Remove 7 items from the blue box.\n\nHow many items end up in the green box?",
+     "true": 8,
+     "pred": 8,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 279. Add 348. Multiply by 9. Add 214. Add 608.",
+     "true": 6465,
+     "pred": 6465,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6465",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'l' appears in the string below.\n\nString:\nadedgulnjydrhcglghvniaelmlxtnx",
+     "true": 4,
+     "pred": 4,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "4",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'h' appears in the string below.\n\nString:\nmlckoghjutjlrhzdlwsyceyyjgyieh",
+     "true": 3,
+     "pred": 3,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 10 items, green box with 5, blue box with 18. Remove 9 items from the blue box. Swap the contents of the red and blue boxes. Add 3 items to the red box. Move 3 items from the red box to the blue box. Move 4 items from the red box to the blue box. Add 9 items to the red box.\n\nHow many items end up in the blue box?",
+     "true": 17,
+     "pred": 16,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "16",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 17 items, green box with 20, blue box with 20. Move 5 items from the green box to the blue box. Swap the contents of the green and blue boxes. Add 7 items to the blue box. Remove 6 items from the green box. Add 7 items to the red box. Swap the contents of the green and blue boxes.\n\nHow many items end up in the blue box?",
+     "true": 19,
+     "pred": 15,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      3,
+      6,
+      7,
+      11
+     ],
+     "perm": null,
+     "finals": [
+      19240,
+      5,
+      1552,
+      2073,
+      1300,
+      8,
+      8,
+      6465,
+      4,
+      3,
+      17,
+      15
+     ],
+     "score": 9,
+     "net_score": 9.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, let me identify which ones I'm least confident about.\n\nLet me recheck a few calculations mentally:\n\nItem 3: 516*9=4644, *6=27864, *9=250776, mod 1000=776, +776=1552. My tentative answer of 252392 seems way off.\n\nItem 6: Let me trace through - this is complex tracking, worth verifying.\n\nItem 7: Also complex tracking, worth verifying.\n\nItem 11: Complex tracking, worth double-checking.\n\n{\"verify\": [3, 6, 7, 11]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "1552",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "8",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55017
+  },
+  {
+   "tentative": [
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 5 items, green box with 18, blue box with 19. Remove 2 items from the blue box. Move 6 items from the green box to the red box. Move 6 items from the red box to the blue box. Move 1 items from the red box to the green box. Move 1 items from the red box to the green box. Move 1 items from the red box to the blue box.\n\nHow many items end up in the green box?",
+     "true": 14,
+     "pred": 14,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "14",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 397. Subtract 901. Add 218. Multiply by 9. Subtract 295.",
+     "true": -2869,
+     "pred": -3079,
+     "confidence": 65,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-3079",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 949. Subtract 634. Multiply by 9. Multiply by 3. Subtract 536.",
+     "true": 7969,
+     "pred": 8005,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "8005",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'a' appears in the string below.\n\nString:\ncxqakmjnarsqvoajarmabitwookdfy",
+     "true": 5,
+     "pred": 6,
+     "confidence": 55,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 13 items, green box with 7, blue box with 12. Add 8 items to the green box. Swap the contents of the blue and green boxes. Move 5 items from the red box to the blue box. Remove 4 items from the blue box. Add 9 items to the blue box. Move 2 items from the blue box to the red box.\n\nHow many items end up in the green box?",
+     "true": 12,
+     "pred": 12,
+     "confidence": 100,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "100",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 648. Add 943. Add 401. Subtract 445. Multiply by 9.",
+     "true": 13923,
+     "pred": 13743,
+     "confidence": 35,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "13743",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "35",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 645. Subtract 412. Multiply by 4. Add 221. Multiply by 8.",
+     "true": 9224,
+     "pred": 9224,
+     "confidence": 95,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "9224",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 15 items, green box with 6, blue box with 15. Swap the contents of the blue and red boxes. Move 6 items from the green box to the red box. Swap the contents of the red and green boxes. Swap the contents of the red and green boxes. Add 8 items to the green box. Move 4 items from the red box to the blue box.\n\nHow many items end up in the red box?",
+     "true": 17,
+     "pred": 17,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "17",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'h' appears in the string below.\n\nString:\ninheahpmckhshharhnchtyhhsdhfhh",
+     "true": 12,
+     "pred": 13,
+     "confidence": 40,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "13",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'i' appears in the string below.\n\nString:\nrtdpsjgihadmrmnbitwlkqtxivcyjw",
+     "true": 3,
+     "pred": 3,
+     "confidence": 70,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "70",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 529. Add 41. Add 66. Multiply by 5. Add 142.",
+     "true": 3322,
+     "pred": 3322,
+     "confidence": 70,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "3322",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "70",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 18 items, green box with 13, blue box with 12. Add 5 items to the blue box. Move 9 items from the red box to the blue box. Add 5 items to the red box. Add 9 items to the blue box. Move 1 items from the blue box to the red box. Remove 4 items from the green box.\n\nHow many items end up in the red box?",
+     "true": 15,
+     "pred": 15,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      3,
+      9,
+      2,
+      7
+     ],
+     "perm": null,
+     "finals": [
+      14,
+      -2869,
+      7969,
+      6,
+      12,
+      13743,
+      9224,
+      17,
+      12,
+      3,
+      3322,
+      15
+     ],
+     "score": 10,
+     "net_score": 10.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I should verify the ones most likely to have errors - particularly multi-step tracking and calculation problems where errors compound.\n\nLet me quickly recheck a few:\n\nItem 1: Red=5, Green=18, Blue=19\n- Remove 2 from blue: Blue=17\n- Move 6 green\u2192red: Green=12, Red=11\n- Move 6 red\u2192blue: Red=5, Blue=23\n- Move 1 red\u2192green: Red=4, Green=13\n- Move 1 red\u2192green: Red=3, Green=14\n- Move 1 red\u2192blue: Red=2, Blue=24\nGreen=14 \u2713 matches\n\nItem 9: Let me count h's in \"inheahpmckhshharhnchtyhhsdhfhh\"\ni-n-h-e-a-h-p-m-c-k-h-s-h-h-a-r-h-n-c-h-t-y-h-h-s-d-h-f-h-h\nh's at positions: 3,6,11,13,14,17,20,23,24,27,29,30 = 12, not 13\n\nItem 3: 949-634=315, \u00d79=2835, \u00d73=8505, -536=7969, not 8005\n\nThese calculations are prone to arithmetic slips, so I'll verify the ones I found discrepancies in plus one more calculation.\n\n{\"verify\": [3, 9, 2, 7]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "7969",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "12",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "-2869",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "9224",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55018
+  },
+  {
+   "tentative": [
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 260. Subtract 875. Subtract 452. Add 404. Multiply by 4.",
+     "true": -2652,
+     "pred": -2652,
+     "confidence": 65,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "-2652",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "65",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 603. Add 91. Subtract 110. Multiply by 8. Add 784.",
+     "true": 5456,
+     "pred": 5488,
+     "confidence": 60,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5488",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 354. Subtract 287. Multiply by 7. Multiply by 4. Multiply by 3.",
+     "true": 5628,
+     "pred": 39396,
+     "confidence": 95,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "39396",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "95",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 17 items, green box with 17, blue box with 17. Remove 2 items from the green box. Add 3 items to the blue box. Move 6 items from the red box to the blue box. Swap the contents of the blue and red boxes. Move 6 items from the red box to the green box. Add 1 items to the red box.\n\nHow many items end up in the green box?",
+     "true": 21,
+     "pred": 21,
+     "confidence": 60,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "21",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "60",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 10 items, green box with 13, blue box with 17. Move 8 items from the red box to the green box. Move 8 items from the blue box to the red box. Move 1 items from the red box to the blue box. Add 2 items to the blue box. Move 5 items from the blue box to the red box. Add 8 items to the blue box.\n\nHow many items end up in the blue box?",
+     "true": 15,
+     "pred": 13,
+     "confidence": 20,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "13",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "20",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 't' appears in the string below.\n\nString:\ntbtkihehlatajtwtjtwifpuwiekqpq",
+     "true": 6,
+     "pred": 6,
+     "confidence": 40,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "40",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 't' appears in the string below.\n\nString:\njgtjkrftffdjwrbmzgvtbbrctoumsu",
+     "true": 4,
+     "pred": 6,
+     "confidence": 55,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "6",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 397. Subtract 853. Subtract 925. Add 890. Add 814.",
+     "true": 323,
+     "pred": 323,
+     "confidence": 30,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "323",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 8 items, green box with 7, blue box with 20. Add 9 items to the blue box. Remove 5 items from the red box. Swap the contents of the red and green boxes. Add 8 items to the blue box. Add 2 items to the blue box. Move 1 items from the blue box to the green box.\n\nHow many items end up in the red box?",
+     "true": 7,
+     "pred": 7,
+     "confidence": 85,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "7",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "85",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "letters_fixed",
+     "body": "Count how many times the letter 'e' appears in the string below.\n\nString:\nsiexktesqjevnqbuxywrkhsrogmeeh",
+     "true": 5,
+     "pred": 5,
+     "confidence": 55,
+     "wrong": false,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "5",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "55",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "tracking",
+     "body": "Track the items in your head and give only the final count.\n\nRed box starts with 20 items, green box with 11, blue box with 16. Swap the contents of the blue and green boxes. Move 4 items from the red box to the blue box. Move 6 items from the blue box to the green box. Remove 4 items from the blue box. Swap the contents of the blue and green boxes. Remove 5 items from the green box.\n\nHow many items end up in the green box?",
+     "true": 0,
+     "pred": 1,
+     "confidence": 30,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "1",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "30",
+       "stop_reason": "end_turn"
+      }
+     ]
+    },
+    {
+     "domain": "arith_standard",
+     "body": "Do the following calculation in your head and give only the final result.\n\nStart with 105. Add 697. Add 394. Add 949. Multiply by 8.",
+     "true": 17160,
+     "pred": 17960,
+     "confidence": 15,
+     "wrong": true,
+     "attempts": [
+      {
+       "key": "answer",
+       "raw": "17960",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "conf",
+       "raw": "15",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   ],
+   "arms": {
+    "hidden": {
+     "arm": "hidden",
+     "picks_1based": [
+      3,
+      12,
+      4,
+      11
+     ],
+     "perm": null,
+     "finals": [
+      -2652,
+      5488,
+      5628,
+      21,
+      13,
+      6,
+      6,
+      323,
+      7,
+      5,
+      0,
+      17160
+     ],
+     "score": 9,
+     "net_score": 9.0,
+     "adoption": [
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      },
+      {
+       "was_wrong": false,
+       "adopted": true
+      },
+      {
+       "was_wrong": true,
+       "adopted": true
+      }
+     ],
+     "attempts": [
+      {
+       "key": "verify_hidden",
+       "raw": "Looking at these problems, I'll identify which ones are most likely to have errors and where verification would be most valuable.\n\nLet me quickly recheck some calculations:\n\nItem 1: 260-875=-615, -615-452=-1067, -1067+404=-663, -663*4=-2652 \u2713 (seems right)\n\nItem 3: 354-287=67, 67*7=469, 469*4=1876, 1876*3=5628 (not 39396!) - likely error\n\nItem 4: Complex box tracking, prone to errors\n\nItem 11: Complex box tracking with swaps, prone to errors\n\nItem 12: 105+697=802, 802+394=1196, 1196+949=2145, 2145*8=17160 (not 17960!) - likely error\n\nThese calculation and tracking problems have highest error risk. I'll verify the ones most likely wrong.\n\n{\"verify\": [3, 12, 4, 11]}",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "5628",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "17160",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "21",
+       "stop_reason": "end_turn"
+      },
+      {
+       "key": "final_hidden",
+       "raw": "0",
+       "stop_reason": "end_turn"
+      }
+     ]
+    }
+   },
+   "block_seed": 55019
+  }
+ ],
+ "parse_counters": {}
+}

@@ -1,0 +1,11 @@
+# code/check_tables.py and the offline re-analysis of the behavioral tests need
+# only the Python standard library. The packages below are needed for the parts noted.
+numpy          # incremental_information.py and the internal-state scripts
+scikit-learn   # incremental_information.py and the internal-state scripts
+scipy          # internal-state scripts
+anthropic      # re-running the tests on the Claude models
+openai         # re-running the tests on the OpenAI, xAI and Google models
+torch          # internal-state scripts
+transformers   # internal-state scripts
+accelerate     # internal-state scripts (model loading)
+bitsandbytes   # internal-state scripts (4-bit model loading)

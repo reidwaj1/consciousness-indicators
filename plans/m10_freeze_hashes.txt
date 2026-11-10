@@ -1,0 +1,4 @@
+M10 freeze 2026-08-03 09:52:38
+sha256 m10_prereg_template.md: a005a56136cf4b448fec3b7e47b39ebe1bc706644c22dda4a8dd3b9a3336e529
+sha256 m10_prereg.md:          f42e322c79948b6c45d7d4b8c98c5bf03f40acdd1c74f362dabd95173d6978cb
+diff lines changed: 24 (all within the five sanctioned blanks; see m10_freeze_diff.txt)

@@ -1,0 +1,28 @@
+{
+ "script": "hot2v5",
+ "model": "grok-4.20-0309-non-reasoning",
+ "provider": "xai",
+ "frozen_args": [
+  "--tier",
+  "core",
+  "--seed",
+  "71",
+  "--fixedlen",
+  "30"
+ ],
+ "regime_tally": {
+  "default(knob-omitted) | observed: reasoning-tokens=0": 1774
+ },
+ "usage": {
+  "calls": 1774,
+  "in_tokens": 474780,
+  "out_tokens": 2455
+ },
+ "params_tally": {
+  "{\"knob\": null, \"max_tokens\": 150, \"temperature\": 1.0, \"token_param\": \"max_completion_tokens\"}": 1134,
+  "{\"knob\": null, \"max_tokens\": 20, \"temperature\": 1.0, \"token_param\": \"max_completion_tokens\"}": 476,
+  "{\"knob\": null, \"max_tokens\": 12, \"temperature\": 1.0, \"token_param\": \"max_completion_tokens\"}": 164
+ },
+ "errors": {},
+ "est_cost_usd": 1.461165
+}

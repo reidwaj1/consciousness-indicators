@@ -1,0 +1,24 @@
+{
+ "script": "berg",
+ "model": "grok-4.20-0309-non-reasoning",
+ "provider": "xai",
+ "frozen_args": [
+  "--seed",
+  "401",
+  "--n",
+  "100"
+ ],
+ "regime_tally": {
+  "default(knob-omitted) | observed: reasoning-tokens=0": 420
+ },
+ "usage": {
+  "calls": 420,
+  "in_tokens": 118219,
+  "out_tokens": 5134
+ },
+ "params_tally": {
+  "{\"knob\": null, \"max_tokens\": 120, \"temperature\": 1.0, \"token_param\": \"max_completion_tokens\"}": 420
+ },
+ "errors": {},
+ "est_cost_usd": 0.431667
+}

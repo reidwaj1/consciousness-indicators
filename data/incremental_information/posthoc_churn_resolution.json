@@ -1,0 +1,23 @@
+{
+ "context": "resolution of the 7/21 weak-monitoring objection",
+ "original_whisper": {
+  "cell": "v5/sonnet-5/tracking/confidence",
+  "delta": 0.034,
+  "p": 0.01,
+  "note": "nominal, uncorrected, 22 tests"
+ },
+ "churn_cue_reanalysis": {
+  "added_cues": [
+   "queried-box mention count",
+   "queried-box swap involvement",
+   "queried-box move involvement"
+  ],
+  "cues_auc_with_churn": 0.869,
+  "cues_plus_conf": 0.874,
+  "delta": 0.005,
+  "p_perm": 0.1936,
+  "churn_cues_alone_auc": 0.812
+ },
+ "verdict": "whisper fully explained by per-queried-box churn - a surface cue absent from the original battery; no cue-independent monitoring signal remains",
+ "m6_disposition": "designed, built, selftested (deterministic), adversarially reviewed; review confirmed a STRUCTURAL confound (queried-box mention count is collinear with the difficulty manipulation; a zero-introspection mention-count bot passes 200/200) plus a typicality-cue hole in the sign balancing; paid run cancelled as both confounded and unnecessary"
+}

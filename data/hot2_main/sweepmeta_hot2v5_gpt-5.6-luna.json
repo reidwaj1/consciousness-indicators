@@ -1,0 +1,70 @@
+{
+ "script": "hot2v5",
+ "model": "gpt-5.6-luna",
+ "provider": "openai",
+ "frozen_args": [
+  "--tier",
+  "core",
+  "--seed",
+  "71",
+  "--fixedlen",
+  "30"
+ ],
+ "regime_tally": {
+  "reasoning-low | observed: reasoning-tokens=0": 157,
+  "reasoning-low | observed: reasoning-tokens=20": 103,
+  "reasoning-low | observed: reasoning-tokens=70": 5,
+  "reasoning-low | observed: reasoning-tokens=66": 5,
+  "reasoning-low | observed: reasoning-tokens=75": 2,
+  "reasoning-low | observed: reasoning-tokens=84": 1,
+  "reasoning-low | observed: reasoning-tokens=58": 3,
+  "reasoning-low | observed: reasoning-tokens=59": 2,
+  "reasoning-low | observed: reasoning-tokens=63": 8,
+  "reasoning-low | observed: reasoning-tokens=51": 2,
+  "reasoning-low | observed: reasoning-tokens=64": 6,
+  "reasoning-low | observed: reasoning-tokens=67": 10,
+  "reasoning-low | observed: reasoning-tokens=12": 113,
+  "reasoning-low | observed: reasoning-tokens=45": 1,
+  "reasoning-low | observed: reasoning-tokens=72": 3,
+  "reasoning-low | observed: reasoning-tokens=56": 2,
+  "reasoning-low | observed: reasoning-tokens=57": 2,
+  "reasoning-low | observed: reasoning-tokens=32": 1,
+  "reasoning-low | observed: reasoning-tokens=17": 1,
+  "reasoning-low | observed: reasoning-tokens=21": 4,
+  "reasoning-low | observed: reasoning-tokens=22": 1,
+  "reasoning-low | observed: reasoning-tokens=62": 2,
+  "reasoning-low | observed: reasoning-tokens=69": 4,
+  "reasoning-low | observed: reasoning-tokens=24": 1,
+  "reasoning-low | observed: reasoning-tokens=49": 1,
+  "reasoning-low | observed: reasoning-tokens=26": 1,
+  "reasoning-low | observed: reasoning-tokens=73": 2,
+  "reasoning-low | observed: reasoning-tokens=61": 3,
+  "reasoning-low | observed: reasoning-tokens=60": 2,
+  "reasoning-low | observed: reasoning-tokens=79": 2,
+  "reasoning-low | observed: reasoning-tokens=78": 3,
+  "reasoning-low | observed: reasoning-tokens=71": 1,
+  "reasoning-low | observed: reasoning-tokens=53": 1,
+  "reasoning-low | observed: reasoning-tokens=44": 3,
+  "reasoning-low | observed: reasoning-tokens=68": 2,
+  "reasoning-low | observed: reasoning-tokens=65": 3,
+  "reasoning-low | observed: reasoning-tokens=77": 2,
+  "reasoning-low | observed: reasoning-tokens=82": 1,
+  "reasoning-low | observed: ": 1
+ },
+ "usage": {
+  "calls": 467,
+  "in_tokens": 84149,
+  "out_tokens": 10645,
+  "failed": 1
+ },
+ "params_tally": {
+  "{\"knob\": \"low\", \"max_tokens\": 150, \"temperature\": 1.0, \"token_param\": \"max_completion_tokens\"}": 215,
+  "{\"knob\": \"low\", \"max_tokens\": 20, \"temperature\": 1.0, \"token_param\": \"max_completion_tokens\"}": 137,
+  "{\"knob\": \"low\", \"max_tokens\": 12, \"temperature\": 1.0, \"token_param\": \"max_completion_tokens\"}": 114,
+  "{}": 1
+ },
+ "errors": {
+  "fatal: BadRequestError: Error code: 400 - {'error': {'message': 'Could not finish the message because max_tokens or model output limit was reached. Please try a": 1
+ },
+ "est_cost_usd": 0.58042
+}

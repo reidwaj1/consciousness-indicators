@@ -1,0 +1,11 @@
+{
+ "repo": "deepseek-ai/DeepSeek-V4-Flash",
+ "sha": "60d8d70770c6776ff598c94bb586a859a38244f1",
+ "files": [
+  "config.json",
+  "generation_config.json",
+  "model.safetensors.index.json",
+  "tokenizer.json",
+  "tokenizer_config.json"
+ ]
+}

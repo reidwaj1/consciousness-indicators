@@ -1,0 +1,20 @@
+{
+ "transformers": "5.14.1",
+ "torch": "2.13.0+cu126",
+ "repo": "deepseek-ai/DeepSeek-V4-Flash",
+ "revision": "60d8d70770c6776ff598c94bb586a859a38244f1",
+ "n_layers": 43,
+ "hidden": 4096,
+ "layers": [
+  7,
+  13,
+  20,
+  26,
+  35,
+  39,
+  41
+ ],
+ "primary_layer": 39,
+ "report_max_path_len": 1,
+ "report_conditional_prefixes": []
+}

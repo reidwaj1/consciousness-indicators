@@ -1,0 +1,4239 @@
+{
+  "model": "grok-4.20-0309-non-reasoning",
+  "n": 100,
+  "seed": 401,
+  "calib_batch": 24,
+  "moduli": [
+    17,
+    19,
+    23,
+    29,
+    31
+  ],
+  "rows": {
+    "arith_standard": [
+      {
+        "level": 3,
+        "true": 686,
+        "pred": 686,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 469. Subtract 607. Subtract 38. Add 862.",
+        "raw": "{\"answer\": 686, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 5159,
+        "pred": 5334,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 820. Add 194. Multiply by 6. Subtract 925.",
+        "raw": "{\"answer\": 5334, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 1130,
+        "pred": 1130,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 930. Subtract 223. Subtract 481. Multiply by 5.",
+        "raw": "{\"answer\": 1130, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 5285,
+        "pred": 5285,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 745. Subtract 579. Add 891. Multiply by 5.",
+        "raw": "{\"answer\": 5285, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 636,
+        "pred": 636,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 115. Add 384. Subtract 381. Add 518.",
+        "raw": "{\"answer\": 636, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 6695,
+        "pred": 6695,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 197. Add 858. Add 284. Multiply by 5.",
+        "raw": "{\"answer\": 6695, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 647,
+        "pred": 647,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 947. Add 245. Subtract 987. Add 442.",
+        "raw": "{\"answer\": 647, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -681,
+        "pred": -681,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 396. Subtract 302. Subtract 321. Multiply by 3.",
+        "raw": "{\"answer\": -681, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 4935,
+        "pred": 4935,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 304. Add 203. Add 198. Multiply by 7.",
+        "raw": "{\"answer\": 4935, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 2075,
+        "pred": 2075,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 412. Add 986. Add 467. Add 210.",
+        "raw": "{\"answer\": 2075, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 3152,
+        "pred": 4824,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 648. Add 334. Multiply by 4. Subtract 776.",
+        "raw": "{\"answer\": 4824, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": -2065,
+        "pred": -4075,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 599. Subtract 845. Multiply by 5. Subtract 835.",
+        "raw": "{\"answer\": -4075, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 38340,
+        "pred": 38340,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 142. Multiply by 9. Multiply by 5. Multiply by 6.",
+        "raw": "{\"answer\": 38340, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 3377,
+        "pred": 7595,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 852. Subtract 535. Multiply by 9. Add 524.",
+        "raw": "{\"answer\": 7595, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 25704,
+        "pred": 25704,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 119. Multiply by 6. Multiply by 9. Multiply by 4.",
+        "raw": "{\"answer\": 25704, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -1641,
+        "pred": -1281,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 743. Subtract 975. Multiply by 3. Subtract 945.",
+        "raw": "{\"answer\": -1281, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 266,
+        "pred": 266,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 845. Subtract 47. Subtract 729. Add 197.",
+        "raw": "{\"answer\": 266, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 253,
+        "pred": -1259,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 286. Multiply by 6. Subtract 588. Subtract 875.",
+        "raw": "{\"answer\": -1259, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -399,
+        "pred": -399,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 640. Subtract 596. Subtract 104. Subtract 339.",
+        "raw": "{\"answer\": -399, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 14712,
+        "pred": 14712,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 840. Multiply by 6. Subtract 136. Multiply by 3.",
+        "raw": "{\"answer\": 14712, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 7824,
+        "pred": 7848,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 906. Subtract 254. Multiply by 4. Multiply by 3.",
+        "raw": "{\"answer\": 7848, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 5802,
+        "pred": 6804,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 597. Multiply by 8. Add 225. Add 801.",
+        "raw": "{\"answer\": 6804, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 2029,
+        "pred": 2029,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 986. Add 286. Add 477. Add 280.",
+        "raw": "{\"answer\": 2029, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -586,
+        "pred": -586,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 545. Subtract 842. Subtract 602. Add 313.",
+        "raw": "{\"answer\": -586, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 10640,
+        "pred": 10640,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 375. Add 260. Add 695. Multiply by 8.",
+        "raw": "{\"answer\": 10640, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 19392,
+        "pred": 20492,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 665. Multiply by 7. Add 193. Multiply by 4.",
+        "raw": "{\"answer\": 20492, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 3088,
+        "pred": 3088,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 859. Subtract 197. Subtract 276. Multiply by 8.",
+        "raw": "{\"answer\": 3088, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 1320,
+        "pred": 1320,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 745. Subtract 337. Subtract 243. Multiply by 8.",
+        "raw": "{\"answer\": 1320, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 2147,
+        "pred": 2147,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 632. Add 443. Add 844. Add 228.",
+        "raw": "{\"answer\": 2147, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 2195,
+        "pred": 2195,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 702. Add 355. Subtract 618. Multiply by 5.",
+        "raw": "{\"answer\": 2195, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -182,
+        "pred": -182,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 241. Subtract 606. Add 635. Subtract 452.",
+        "raw": "{\"answer\": -182, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -936,
+        "pred": -940,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 335. Subtract 301. Subtract 151. Multiply by 8.",
+        "raw": "{\"answer\": -940, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 305,
+        "pred": 305,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 194. Add 208. Subtract 771. Add 674.",
+        "raw": "{\"answer\": 305, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 578,
+        "pred": -1072,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 455. Multiply by 3. Subtract 342. Subtract 445.",
+        "raw": "{\"answer\": -1072, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 3066,
+        "pred": 3052,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 700. Subtract 894. Add 632. Multiply by 7.",
+        "raw": "{\"answer\": 3052, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 11624,
+        "pred": 12632,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 666. Multiply by 4. Multiply by 4. Add 968.",
+        "raw": "{\"answer\": 12632, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 175000,
+        "pred": 175000,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 875. Multiply by 8. Multiply by 5. Multiply by 5.",
+        "raw": "{\"answer\": 175000, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -1986,
+        "pred": -1986,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 298. Subtract 572. Subtract 388. Multiply by 3.",
+        "raw": "{\"answer\": -1986, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 28174,
+        "pred": 28174,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 693. Multiply by 5. Multiply by 8. Add 454.",
+        "raw": "{\"answer\": 28174, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 76950,
+        "pred": 76950,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 285. Multiply by 9. Multiply by 5. Multiply by 6.",
+        "raw": "{\"answer\": 76950, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 627,
+        "pred": -1281,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 496. Subtract 182. Multiply by 5. Subtract 943.",
+        "raw": "{\"answer\": -1281, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 60966,
+        "pred": 62838,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 689. Multiply by 9. Add 573. Multiply by 9.",
+        "raw": "{\"answer\": 62838, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 21068,
+        "pred": 25236,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 563. Multiply by 8. Add 763. Multiply by 4.",
+        "raw": "{\"answer\": 25236, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 5412,
+        "pred": 5412,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 478. Add 954. Subtract 79. Multiply by 4.",
+        "raw": "{\"answer\": 5412, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -459,
+        "pred": -459,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 315. Subtract 478. Add 633. Subtract 929.",
+        "raw": "{\"answer\": -459, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -82,
+        "pred": -82,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 977. Subtract 536. Subtract 310. Subtract 213.",
+        "raw": "{\"answer\": -82, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 23172,
+        "pred": 28932,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 828. Multiply by 6. Add 825. Multiply by 4.",
+        "raw": "{\"answer\": 28932, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 1932,
+        "pred": 1932,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 548. Subtract 635. Add 570. Multiply by 4.",
+        "raw": "{\"answer\": 1932, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 1759,
+        "pred": 1759,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 126. Add 227. Add 553. Add 853.",
+        "raw": "{\"answer\": 1759, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 678,
+        "pred": 2390,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 832. Subtract 797. Multiply by 4. Add 538.",
+        "raw": "{\"answer\": 2390, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 12164,
+        "pred": 12164,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 384. Multiply by 6. Multiply by 5. Add 644.",
+        "raw": "{\"answer\": 12164, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 898,
+        "pred": 898,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 683. Subtract 623. Subtract 123. Add 961.",
+        "raw": "{\"answer\": 898, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 1157,
+        "pred": 1157,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 611. Subtract 782. Add 471. Add 857.",
+        "raw": "{\"answer\": 1157, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 4781,
+        "pred": 4779,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 510. Subtract 738. Add 911. Multiply by 7.",
+        "raw": "{\"answer\": 4779, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": -9300,
+        "pred": -9300,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 163. Subtract 473. Multiply by 6. Multiply by 5.",
+        "raw": "{\"answer\": -9300, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 35480,
+        "pred": 35520,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 440. Add 447. Multiply by 5. Multiply by 8.",
+        "raw": "{\"answer\": 35520, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 45351,
+        "pred": 50004,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 555. Multiply by 8. Add 599. Multiply by 9.",
+        "raw": "{\"answer\": 50004, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 3437,
+        "pred": 3437,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 352. Multiply by 6. Add 776. Add 549.",
+        "raw": "{\"answer\": 3437, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -23,
+        "pred": -23,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 135. Subtract 73. Subtract 913. Add 828.",
+        "raw": "{\"answer\": -23, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 14528,
+        "pred": 15280,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 663. Multiply by 5. Add 317. Multiply by 4.",
+        "raw": "{\"answer\": 15280, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 947,
+        "pred": 947,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 705. Add 569. Subtract 841. Add 514.",
+        "raw": "{\"answer\": 947, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 30113,
+        "pred": 30113,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 420. Multiply by 9. Multiply by 8. Subtract 127.",
+        "raw": "{\"answer\": 30113, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 2664,
+        "pred": 2664,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 652. Subtract 371. Add 607. Multiply by 3.",
+        "raw": "{\"answer\": 2664, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -1262,
+        "pred": -1262,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 818. Subtract 697. Subtract 795. Subtract 588.",
+        "raw": "{\"answer\": -1262, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 1456,
+        "pred": 1456,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 149. Multiply by 4. Multiply by 3. Subtract 332.",
+        "raw": "{\"answer\": 1456, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -3973,
+        "pred": -5491,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 311. Subtract 731. Multiply by 9. Subtract 193.",
+        "raw": "{\"answer\": -5491, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 14706,
+        "pred": 14694,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 646. Add 171. Multiply by 6. Multiply by 3.",
+        "raw": "{\"answer\": 14694, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": -1359,
+        "pred": -1359,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 686. Subtract 888. Subtract 884. Subtract 273.",
+        "raw": "{\"answer\": -1359, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 5880,
+        "pred": 5880,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 727. Subtract 935. Add 943. Multiply by 8.",
+        "raw": "{\"answer\": 5880, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": -237,
+        "pred": -237,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 932. Add 87. Subtract 484. Subtract 772.",
+        "raw": "{\"answer\": -237, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 964,
+        "pred": 964,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 427. Subtract 607. Add 663. Add 481.",
+        "raw": "{\"answer\": 964, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 13758,
+        "pred": 14898,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 506. Multiply by 5. Subtract 237. Multiply by 6.",
+        "raw": "{\"answer\": 14898, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -2573,
+        "pred": -5073,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 579. Subtract 914. Multiply by 6. Subtract 563.",
+        "raw": "{\"answer\": -5073, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 816,
+        "pred": 816,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 541. Subtract 285. Subtract 52. Multiply by 4.",
+        "raw": "{\"answer\": 816, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -270,
+        "pred": -270,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 524. Add 94. Subtract 953. Add 65.",
+        "raw": "{\"answer\": -270, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 2291,
+        "pred": 3361,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 829. Subtract 379. Multiply by 7. Subtract 859.",
+        "raw": "{\"answer\": 3361, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -1251,
+        "pred": -1251,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 886. Subtract 939. Subtract 472. Subtract 726.",
+        "raw": "{\"answer\": -1251, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 101,
+        "pred": 1280,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 485. Subtract 558. Multiply by 4. Add 393.",
+        "raw": "{\"answer\": 1280, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 3774,
+        "pred": 2892,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 226. Multiply by 8. Subtract 550. Multiply by 3.",
+        "raw": "{\"answer\": 2892, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 1491,
+        "pred": 1491,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 952. Add 426. Add 942. Subtract 829.",
+        "raw": "{\"answer\": 1491, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 1416,
+        "pred": 1416,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 556. Add 378. Subtract 462. Multiply by 3.",
+        "raw": "{\"answer\": 1416, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -4284,
+        "pred": -4284,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 319. Subtract 520. Subtract 513. Multiply by 6.",
+        "raw": "{\"answer\": -4284, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 12513,
+        "pred": 11839,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 797. Add 869. Multiply by 7. Add 851.",
+        "raw": "{\"answer\": 11839, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": 9940,
+        "pred": 9940,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 880. Subtract 525. Multiply by 7. Multiply by 4.",
+        "raw": "{\"answer\": 9940, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -16038,
+        "pred": -16038,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 529. Subtract 826. Multiply by 6. Multiply by 9.",
+        "raw": "{\"answer\": -16038, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": -231,
+        "pred": -231,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 428. Subtract 940. Add 68. Add 213.",
+        "raw": "{\"answer\": -231, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 378,
+        "pred": 738,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 250. Subtract 192. Multiply by 5. Add 88.",
+        "raw": "{\"answer\": 738, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 11736,
+        "pred": 11736,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 880. Add 515. Subtract 91. Multiply by 9.",
+        "raw": "{\"answer\": 11736, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 186,
+        "pred": 186,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 529. Subtract 168. Subtract 460. Add 285.",
+        "raw": "{\"answer\": 186, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 1922,
+        "pred": 1970,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 117. Add 119. Multiply by 9. Subtract 202.",
+        "raw": "{\"answer\": 1970, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 3288,
+        "pred": 3288,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 727. Add 602. Subtract 507. Multiply by 4.",
+        "raw": "{\"answer\": 3288, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 1960,
+        "pred": 1956,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 707. Multiply by 4. Subtract 442. Subtract 426.",
+        "raw": "{\"answer\": 1956, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 881,
+        "pred": 881,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 450. Subtract 356. Add 847. Subtract 60.",
+        "raw": "{\"answer\": 881, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 1880,
+        "pred": 1880,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 342. Add 865. Add 377. Add 296.",
+        "raw": "{\"answer\": 1880, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 3793,
+        "pred": 3793,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 702. Multiply by 4. Add 274. Add 711.",
+        "raw": "{\"answer\": 3793, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": -1012,
+        "pred": -580,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 576. Subtract 960. Multiply by 3. Add 140.",
+        "raw": "{\"answer\": -580, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 1909,
+        "pred": 1909,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 587. Add 643. Subtract 253. Add 932.",
+        "raw": "{\"answer\": 1909, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 5130,
+        "pred": 5274,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 236. Multiply by 7. Add 58. Multiply by 3.",
+        "raw": "{\"answer\": 5274, \"confidence\": 80}"
+      },
+      {
+        "level": 3,
+        "true": -6777,
+        "pred": -6786,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 728. Subtract 979. Multiply by 9. Multiply by 3.",
+        "raw": "{\"answer\": -6786, \"confidence\": 90}"
+      },
+      {
+        "level": 3,
+        "true": 2757,
+        "pred": 2757,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 930. Add 278. Add 786. Add 763.",
+        "raw": "{\"answer\": 2757, \"confidence\": 90}"
+      }
+    ],
+    "arith_mod": [
+      {
+        "level": 2,
+        "true": 1,
+        "pred": 0,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 113. Subtract 73, then take the result mod 29. Multiply by 8, then take the result mod 29.",
+        "raw": "{\"answer\": 0, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 4,
+        "pred": 1,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 145. Subtract 93, then take the result mod 17. Multiply by 4, then take the result mod 17.",
+        "raw": "{\"answer\": 1, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 0,
+        "pred": 4,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 118. Multiply by 9, then take the result mod 19. Add 59, then take the result mod 19.",
+        "raw": "{\"answer\": 4, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 22,
+        "pred": 12,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 344. Add 13, then take the result mod 23. Subtract 59, then take the result mod 23.",
+        "raw": "{\"answer\": 12, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 3,
+        "pred": 12,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 480. Subtract 26, then take the result mod 19. Multiply by 8, then take the result mod 19.",
+        "raw": "{\"answer\": 12, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 8,
+        "pred": 12,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 125. Multiply by 7, then take the result mod 23. Multiply by 8, then take the result mod 23.",
+        "raw": "{\"answer\": 12, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 0,
+        "pred": 124,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 251. Subtract 60, then take the result mod 31. Subtract 36, then take the result mod 31.",
+        "raw": "{\"answer\": 124, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 2,
+        "pred": 2,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 714. Multiply by 6, then take the result mod 23. Add 42, then take the result mod 23.",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 7,
+        "pred": 10,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 989. Subtract 63, then take the result mod 23. Multiply by 5, then take the result mod 23.",
+        "raw": "{\"answer\": 10, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 18,
+        "pred": 20,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 989. Subtract 47, then take the result mod 23. Multiply by 5, then take the result mod 23.",
+        "raw": "{\"answer\": 20, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 3,
+        "pred": 5,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 921. Subtract 57, then take the result mod 29. Subtract 49, then take the result mod 29.",
+        "raw": "{\"answer\": 5, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 19,
+        "pred": 18,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 911. Subtract 55, then take the result mod 29. Multiply by 9, then take the result mod 29.",
+        "raw": "{\"answer\": 18, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 10,
+        "pred": 4,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 985. Multiply by 9, then take the result mod 19. Add 75, then take the result mod 19.",
+        "raw": "{\"answer\": 4, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 1,
+        "pred": 19,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 234. Add 71, then take the result mod 23. Multiply by 4, then take the result mod 23.",
+        "raw": "{\"answer\": 19, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 9,
+        "pred": 17,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 257. Add 96, then take the result mod 23. Subtract 22, then take the result mod 23.",
+        "raw": "{\"answer\": 17, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 10,
+        "pred": 10,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 658. Add 72, then take the result mod 17. Add 62, then take the result mod 17.",
+        "raw": "{\"answer\": 10, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 0,
+        "pred": 29,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 952. Add 32, then take the result mod 31. Subtract 23, then take the result mod 31.",
+        "raw": "{\"answer\": 29, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 8,
+        "pred": 18,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 287. Add 96, then take the result mod 19. Multiply by 9, then take the result mod 19.",
+        "raw": "{\"answer\": 18, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 12,
+        "pred": 1,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 679. Add 15, then take the result mod 31. Subtract 62, then take the result mod 31.",
+        "raw": "{\"answer\": 1, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 11,
+        "pred": 6,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 509. Multiply by 5, then take the result mod 17. Multiply by 8, then take the result mod 17.",
+        "raw": "{\"answer\": 6, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 15,
+        "pred": 27,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 825. Add 73, then take the result mod 29. Subtract 71, then take the result mod 29.",
+        "raw": "{\"answer\": 27, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 4,
+        "pred": 7,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 624. Subtract 93, then take the result mod 29. Subtract 63, then take the result mod 29.",
+        "raw": "{\"answer\": 7, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 7,
+        "pred": 12,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 321. Add 78, then take the result mod 17. Multiply by 3, then take the result mod 17.",
+        "raw": "{\"answer\": 12, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 7,
+        "pred": 7,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 665. Add 15, then take the result mod 17. Add 58, then take the result mod 17.",
+        "raw": "{\"answer\": 7, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 22,
+        "pred": 7,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 387. Subtract 31, then take the result mod 31. Add 69, then take the result mod 31.",
+        "raw": "{\"answer\": 7, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 20,
+        "pred": 8,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 631. Multiply by 6, then take the result mod 23. Multiply by 8, then take the result mod 23.",
+        "raw": "{\"answer\": 8, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 9,
+        "pred": 20,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 618. Subtract 39, then take the result mod 23. Multiply by 8, then take the result mod 23.",
+        "raw": "{\"answer\": 20, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 13,
+        "pred": 19,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 562. Add 45, then take the result mod 23. Subtract 88, then take the result mod 23.",
+        "raw": "{\"answer\": 19, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 9,
+        "pred": 12,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 435. Subtract 26, then take the result mod 29. Multiply by 3, then take the result mod 29.",
+        "raw": "{\"answer\": 12, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 9,
+        "pred": 18,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 628. Add 23, then take the result mod 29. Subtract 91, then take the result mod 29.",
+        "raw": "{\"answer\": 18, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 10,
+        "pred": 14,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 441. Multiply by 5, then take the result mod 23. Subtract 33, then take the result mod 23.",
+        "raw": "{\"answer\": 14, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 14,
+        "pred": 2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 256. Subtract 13, then take the result mod 17. Subtract 76, then take the result mod 17.",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 4,
+        "pred": 2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 293. Multiply by 6, then take the result mod 17. Multiply by 3, then take the result mod 17.",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 7,
+        "pred": 2,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 894. Multiply by 9, then take the result mod 23. Multiply by 4, then take the result mod 23.",
+        "raw": "{\"answer\": 2, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 8,
+        "pred": 12,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 559. Multiply by 8, then take the result mod 23. Add 67, then take the result mod 23.",
+        "raw": "{\"answer\": 12, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 17,
+        "pred": 20,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 697. Subtract 20, then take the result mod 23. Subtract 85, then take the result mod 23.",
+        "raw": "{\"answer\": 20, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 6,
+        "pred": 9,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 732. Add 47, then take the result mod 19. Subtract 32, then take the result mod 19.",
+        "raw": "{\"answer\": 9, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 0,
+        "pred": 12,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 974. Add 41, then take the result mod 29. Multiply by 3, then take the result mod 29.",
+        "raw": "{\"answer\": 12, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 9,
+        "pred": 22,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 718. Subtract 84, then take the result mod 23. Add 88, then take the result mod 23.",
+        "raw": "{\"answer\": 22, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 13,
+        "pred": 5,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 193. Multiply by 9, then take the result mod 19. Multiply by 4, then take the result mod 19.",
+        "raw": "{\"answer\": 5, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 2,
+        "pred": 0,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 597. Add 72, then take the result mod 31. Multiply by 7, then take the result mod 31.",
+        "raw": "{\"answer\": 0, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 1,
+        "pred": 6,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 995. Multiply by 7, then take the result mod 19. Multiply by 7, then take the result mod 19.",
+        "raw": "{\"answer\": 6, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 7,
+        "pred": 18,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 661. Add 40, then take the result mod 23. Multiply by 9, then take the result mod 23.",
+        "raw": "{\"answer\": 18, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 22,
+        "pred": 19,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 476. Add 32, then take the result mod 29. Add 94, then take the result mod 29.",
+        "raw": "{\"answer\": 19, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 5,
+        "pred": 2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 530. Add 30, then take the result mod 17. Add 23, then take the result mod 17.",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 7,
+        "pred": 8,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 696. Add 67, then take the result mod 23. Subtract 66, then take the result mod 23.",
+        "raw": "{\"answer\": 8, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 1,
+        "pred": 21,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 626. Subtract 46, then take the result mod 31. Add 72, then take the result mod 31.",
+        "raw": "{\"answer\": 21, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 14,
+        "pred": 18,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 564. Multiply by 9, then take the result mod 23. Subtract 71, then take the result mod 23.",
+        "raw": "{\"answer\": 18, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 21,
+        "pred": 14,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 148. Add 39, then take the result mod 23. Multiply by 7, then take the result mod 23.",
+        "raw": "{\"answer\": 14, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 0,
+        "pred": 2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 962. Add 14, then take the result mod 19. Add 88, then take the result mod 19.",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 13,
+        "pred": 11,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 691. Multiply by 8, then take the result mod 29. Subtract 63, then take the result mod 29.",
+        "raw": "{\"answer\": 11, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 5,
+        "pred": 8,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 287. Subtract 66, then take the result mod 29. Add 45, then take the result mod 29.",
+        "raw": "{\"answer\": 8, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 11,
+        "pred": 20,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 152. Subtract 67, then take the result mod 29. Multiply by 9, then take the result mod 29.",
+        "raw": "{\"answer\": 20, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 22,
+        "pred": 13,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 376. Subtract 37, then take the result mod 23. Subtract 18, then take the result mod 23.",
+        "raw": "{\"answer\": 13, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 0,
+        "pred": 0,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 322. Add 39, then take the result mod 19. Multiply by 9, then take the result mod 19.",
+        "raw": "{\"answer\": 0, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 15,
+        "pred": 11,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 765. Subtract 23, then take the result mod 29. Subtract 31, then take the result mod 29.",
+        "raw": "{\"answer\": 11, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 18,
+        "pred": 18,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 773. Subtract 29, then take the result mod 23. Multiply by 8, then take the result mod 23.",
+        "raw": "{\"answer\": 18, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 0,
+        "pred": 19,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 729. Subtract 80, then take the result mod 31. Subtract 60, then take the result mod 31.",
+        "raw": "{\"answer\": 19, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 1,
+        "pred": 18,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 325. Subtract 24, then take the result mod 31. Subtract 83, then take the result mod 31.",
+        "raw": "{\"answer\": 18, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 15,
+        "pred": 14,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 731. Multiply by 7, then take the result mod 17. Add 32, then take the result mod 17.",
+        "raw": "{\"answer\": 14, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 1,
+        "pred": 1,
+        "correct": true,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 919. Multiply by 7, then take the result mod 19. Multiply by 7, then take the result mod 19.",
+        "raw": "{\"answer\": 1, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 19,
+        "pred": 21,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 436. Add 65, then take the result mod 31. Subtract 79, then take the result mod 31.",
+        "raw": "{\"answer\": 21, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 4,
+        "pred": 10,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 602. Add 57, then take the result mod 19. Add 86, then take the result mod 19.",
+        "raw": "{\"answer\": 10, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 9,
+        "pred": 12,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 900. Multiply by 9, then take the result mod 23. Add 74, then take the result mod 23.",
+        "raw": "{\"answer\": 12, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 12,
+        "pred": 18,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 699. Multiply by 5, then take the result mod 23. Subtract 56, then take the result mod 23.",
+        "raw": "{\"answer\": 18, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 22,
+        "pred": 32,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 879. Subtract 34, then take the result mod 29. Add 47, then take the result mod 29.",
+        "raw": "{\"answer\": 32, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 19,
+        "pred": 6,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 132. Add 65, then take the result mod 29. Subtract 62, then take the result mod 29.",
+        "raw": "{\"answer\": 6, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 15,
+        "pred": 2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 266. Add 92, then take the result mod 29. Add 63, then take the result mod 29.",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 9,
+        "pred": 8,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 700. Subtract 80, then take the result mod 17. Subtract 16, then take the result mod 17.",
+        "raw": "{\"answer\": 8, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 26,
+        "pred": 25,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 277. Multiply by 7, then take the result mod 29. Add 59, then take the result mod 29.",
+        "raw": "{\"answer\": 25, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 17,
+        "pred": 18,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 390. Multiply by 9, then take the result mod 19. Multiply by 8, then take the result mod 19.",
+        "raw": "{\"answer\": 18, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 3,
+        "pred": 2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 963. Add 70, then take the result mod 31. Add 55, then take the result mod 31.",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 4,
+        "pred": 13,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 398. Subtract 58, then take the result mod 17. Add 55, then take the result mod 17.",
+        "raw": "{\"answer\": 13, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 12,
+        "pred": 12,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 236. Subtract 43, then take the result mod 19. Multiply by 4, then take the result mod 19.",
+        "raw": "{\"answer\": 12, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 7,
+        "pred": 2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 579. Multiply by 8, then take the result mod 17. Multiply by 3, then take the result mod 17.",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 17,
+        "pred": 5,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 805. Add 67, then take the result mod 19. Add 38, then take the result mod 19.",
+        "raw": "{\"answer\": 5, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 16,
+        "pred": 3,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 848. Multiply by 3, then take the result mod 23. Add 94, then take the result mod 23.",
+        "raw": "{\"answer\": 3, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 9,
+        "pred": 9,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 186. Subtract 75, then take the result mod 29. Subtract 73, then take the result mod 29.",
+        "raw": "{\"answer\": 9, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 27,
+        "pred": 26,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 874. Add 81, then take the result mod 29. Subtract 58, then take the result mod 29.",
+        "raw": "{\"answer\": 26, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 27,
+        "pred": 8,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 281. Subtract 80, then take the result mod 31. Multiply by 8, then take the result mod 31.",
+        "raw": "{\"answer\": 8, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 17,
+        "pred": 22,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 424. Add 59, then take the result mod 29. Add 56, then take the result mod 29.",
+        "raw": "{\"answer\": 22, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 16,
+        "pred": 24,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 314. Subtract 47, then take the result mod 31. Multiply by 9, then take the result mod 31.",
+        "raw": "{\"answer\": 24, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 26,
+        "pred": 0,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 772. Multiply by 7, then take the result mod 31. Subtract 77, then take the result mod 31.",
+        "raw": "{\"answer\": 0, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 8,
+        "pred": 12,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 432. Subtract 69, then take the result mod 23. Multiply by 3, then take the result mod 23.",
+        "raw": "{\"answer\": 12, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 20,
+        "pred": 4,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 995. Multiply by 8, then take the result mod 31. Multiply by 6, then take the result mod 31.",
+        "raw": "{\"answer\": 4, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 11,
+        "pred": 2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 394. Subtract 28, then take the result mod 17. Add 19, then take the result mod 17.",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 14,
+        "pred": 4,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 623. Subtract 14, then take the result mod 17. Subtract 68, then take the result mod 17.",
+        "raw": "{\"answer\": 4, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 13,
+        "pred": 18,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 985. Subtract 81, then take the result mod 23. Add 75, then take the result mod 23.",
+        "raw": "{\"answer\": 18, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 4,
+        "pred": 15,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 614. Add 52, then take the result mod 19. Multiply by 4, then take the result mod 19.",
+        "raw": "{\"answer\": 15, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 22,
+        "pred": 14,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 587. Add 24, then take the result mod 23. Multiply by 7, then take the result mod 23.",
+        "raw": "{\"answer\": 14, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 16,
+        "pred": 5,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 208. Multiply by 3, then take the result mod 31. Multiply by 4, then take the result mod 31.",
+        "raw": "{\"answer\": 5, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 15,
+        "pred": 10,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 543. Add 68, then take the result mod 17. Add 33, then take the result mod 17.",
+        "raw": "{\"answer\": 10, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 15,
+        "pred": 12,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 859. Subtract 26, then take the result mod 23. Multiply by 3, then take the result mod 23.",
+        "raw": "{\"answer\": 12, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 20,
+        "pred": 14,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 661. Multiply by 9, then take the result mod 29. Multiply by 5, then take the result mod 29.",
+        "raw": "{\"answer\": 14, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 16,
+        "pred": 19,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 455. Multiply by 6, then take the result mod 31. Multiply by 8, then take the result mod 31.",
+        "raw": "{\"answer\": 19, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 15,
+        "pred": 4,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 388. Subtract 68, then take the result mod 23. Multiply by 4, then take the result mod 23.",
+        "raw": "{\"answer\": 4, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 0,
+        "pred": 20,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 948. Subtract 34, then take the result mod 23. Add 75, then take the result mod 23.",
+        "raw": "{\"answer\": 20, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 9,
+        "pred": 18,
+        "correct": false,
+        "confidence": 80.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 929. Subtract 25, then take the result mod 23. Subtract 67, then take the result mod 23.",
+        "raw": "{\"answer\": 18, \"confidence\": 80}"
+      },
+      {
+        "level": 2,
+        "true": 6,
+        "pred": 15,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 173. Multiply by 6, then take the result mod 23. Add 49, then take the result mod 23.",
+        "raw": "{\"answer\": 15, \"confidence\": 90}"
+      },
+      {
+        "level": 2,
+        "true": 4,
+        "pred": 23,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Do the following calculation in your head and give only the final result.\n\nStart with 940. Subtract 48, then take the result mod 29. Subtract 47, then take the result mod 29.",
+        "raw": "{\"answer\": 23, \"confidence\": 90}"
+      }
+    ],
+    "arith_madeop": [
+      {
+        "level": 1,
+        "true": 17,
+        "pred": 15,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = 2*x - 1*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 smib 4).",
+        "raw": "{\"answer\": 15, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -1,
+        "pred": 5,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = -3*x + 2*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 trell 8).",
+        "raw": "{\"answer\": 5, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 5,
+        "pred": 5,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = 2*x - 1*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 trell 4).",
+        "raw": "{\"answer\": 5, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 1,
+        "pred": -1,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 2*x - 1*y + 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 quang 7).",
+        "raw": "{\"answer\": -1, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 21,
+        "pred": 21,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 2*x + 1*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 blorp 4).",
+        "raw": "{\"answer\": 21, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 35,
+        "pred": 35,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 3*x + 1*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 dax 6).",
+        "raw": "{\"answer\": 35, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -15,
+        "pred": -21,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = -3*x - 2*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 dax 7).",
+        "raw": "{\"answer\": -21, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 13,
+        "pred": 13,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = 3*x - 1*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 vun 8).",
+        "raw": "{\"answer\": 13, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 7,
+        "pred": 11,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 3*x - 2*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 dax 8).",
+        "raw": "{\"answer\": 11, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -23,
+        "pred": -27,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = -3*x - 2*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 vun 2).",
+        "raw": "{\"answer\": -27, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 6,
+        "pred": 6,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = 3*x - 2*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 smib 6).",
+        "raw": "{\"answer\": 6, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 17,
+        "pred": 13,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = 2*x + 1*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 trell 8).",
+        "raw": "{\"answer\": 13, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 20,
+        "pred": 20,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 2*x + 1*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 dax 5).",
+        "raw": "{\"answer\": 20, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 9,
+        "pred": 9,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 2*x - 2*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 dax 3).",
+        "raw": "{\"answer\": 9, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 7,
+        "pred": 7,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 2*x - 2*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 blorp 2).",
+        "raw": "{\"answer\": 7, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 23,
+        "pred": 21,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 3*x - 2*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 blorp 2).",
+        "raw": "{\"answer\": 21, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -30,
+        "pred": -29,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = -3*x - 2*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 quang 8).",
+        "raw": "{\"answer\": -29, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 20,
+        "pred": 20,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 3*x - 2*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 dax 2).",
+        "raw": "{\"answer\": 20, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -43,
+        "pred": -43,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = -3*x - 2*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 trell 8).",
+        "raw": "{\"answer\": -43, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -10,
+        "pred": -14,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = -2*x - 1*y - 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 dax 4).",
+        "raw": "{\"answer\": -14, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -18,
+        "pred": -18,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = -2*x - 1*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 dax 8).",
+        "raw": "{\"answer\": -18, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 14,
+        "pred": 14,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = 2*x - 1*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 trell 3).",
+        "raw": "{\"answer\": 14, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -18,
+        "pred": -18,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = -2*x - 2*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 dax 5).",
+        "raw": "{\"answer\": -18, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -7,
+        "pred": -7,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 2*x - 2*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 blorp 7).",
+        "raw": "{\"answer\": -7, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -23,
+        "pred": -25,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = -2*x - 2*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 blorp 7).",
+        "raw": "{\"answer\": -25, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 9,
+        "pred": 14,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 3*x - 2*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 dax 7).",
+        "raw": "{\"answer\": 14, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -38,
+        "pred": -40,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = -3*x - 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 blorp 9).",
+        "raw": "{\"answer\": -40, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -18,
+        "pred": -18,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = -3*x - 1*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 vun 4).",
+        "raw": "{\"answer\": -18, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -28,
+        "pred": -28,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = -3*x - 1*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 dax 9).",
+        "raw": "{\"answer\": -28, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 3,
+        "pred": 5,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = 2*x - 2*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 vun 5).",
+        "raw": "{\"answer\": 5, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 8,
+        "pred": 8,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 2*x - 1*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 quang 2).",
+        "raw": "{\"answer\": 8, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 9,
+        "pred": 13,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = -2*x + 2*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 quang 8).",
+        "raw": "{\"answer\": 13, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -1,
+        "pred": 3,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 3*x - 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 quang 8).",
+        "raw": "{\"answer\": 3, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -6,
+        "pred": -6,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = -2*x + 1*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 vun 5).",
+        "raw": "{\"answer\": -6, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 10,
+        "pred": 8,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = 3*x - 2*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 vun 3).",
+        "raw": "{\"answer\": 8, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -14,
+        "pred": -18,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = -2*x - 2*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 quang 7).",
+        "raw": "{\"answer\": -18, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -6,
+        "pred": -18,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = -2*x + 2*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 quang 7).",
+        "raw": "{\"answer\": -18, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -9,
+        "pred": -9,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = 2*x - 2*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 smib 8).",
+        "raw": "{\"answer\": -9, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -11,
+        "pred": -13,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 2*x - 2*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 quang 7).",
+        "raw": "{\"answer\": -13, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 28,
+        "pred": 20,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 3*x + 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 quang 9).",
+        "raw": "{\"answer\": 20, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 14,
+        "pred": 14,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = 2*x + 1*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 vun 3).",
+        "raw": "{\"answer\": 14, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -21,
+        "pred": -29,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = -3*x - 1*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 trell 8).",
+        "raw": "{\"answer\": -29, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 38,
+        "pred": 42,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 3*x + 2*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 quang 8).",
+        "raw": "{\"answer\": 42, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 24,
+        "pred": 24,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 3*x - 1*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 blorp 2).",
+        "raw": "{\"answer\": 24, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 2,
+        "pred": -2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 3*x - 1*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 blorp 9).",
+        "raw": "{\"answer\": -2, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 0,
+        "pred": -2,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = -2*x + 2*y + 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 smib 6).",
+        "raw": "{\"answer\": -2, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 23,
+        "pred": 19,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = 3*x + 2*y - 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 trell 2).",
+        "raw": "{\"answer\": 19, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -16,
+        "pred": -18,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = -3*x + 1*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 vun 2).",
+        "raw": "{\"answer\": -18, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -20,
+        "pred": -22,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = -2*x - 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 quang 6).",
+        "raw": "{\"answer\": -22, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 12,
+        "pred": 12,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 3*x + 1*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 blorp 4).",
+        "raw": "{\"answer\": 12, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 19,
+        "pred": 19,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 2*x + 2*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 dax 2).",
+        "raw": "{\"answer\": 19, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -9,
+        "pred": -11,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = -2*x + 1*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 smib 2).",
+        "raw": "{\"answer\": -11, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 3,
+        "pred": 1,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 2*x + 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 blorp 4).",
+        "raw": "{\"answer\": 1, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -9,
+        "pred": -9,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = -2*x + 1*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 quang 6).",
+        "raw": "{\"answer\": -9, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 5,
+        "pred": 5,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 2*x - 2*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 dax 2).",
+        "raw": "{\"answer\": 5, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 9,
+        "pred": 9,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = 2*x + 1*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 trell 4).",
+        "raw": "{\"answer\": 9, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 14,
+        "pred": 14,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 3*x - 1*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 quang 3).",
+        "raw": "{\"answer\": 14, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 33,
+        "pred": 39,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = 3*x + 2*y + 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 vun 8).",
+        "raw": "{\"answer\": 39, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 7,
+        "pred": 7,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 3*x + 1*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 blorp 5).",
+        "raw": "{\"answer\": 7, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -33,
+        "pred": -33,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = -3*x - 1*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 smib 8).",
+        "raw": "{\"answer\": -33, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 23,
+        "pred": 23,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = 3*x + 1*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 vun 6).",
+        "raw": "{\"answer\": 23, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -33,
+        "pred": -33,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = -2*x - 2*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 dax 8).",
+        "raw": "{\"answer\": -33, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 19,
+        "pred": 19,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 3*x + 1*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 quang 2).",
+        "raw": "{\"answer\": 19, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -20,
+        "pred": -20,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = -2*x - 1*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 dax 9).",
+        "raw": "{\"answer\": -20, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -27,
+        "pred": -31,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = -2*x - 2*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 smib 7).",
+        "raw": "{\"answer\": -31, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 4,
+        "pred": 4,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = 3*x - 2*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 trell 7).",
+        "raw": "{\"answer\": 4, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -14,
+        "pred": -14,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = -2*x + 1*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 quang 8).",
+        "raw": "{\"answer\": -14, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 15,
+        "pred": 15,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = 3*x + 2*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 vun 2).",
+        "raw": "{\"answer\": 15, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 17,
+        "pred": 17,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = 2*x + 2*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 smib 6).",
+        "raw": "{\"answer\": 17, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 30,
+        "pred": 30,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 2*x + 1*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 dax 9).",
+        "raw": "{\"answer\": 30, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 23,
+        "pred": 20,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = 3*x + 2*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 vun 3).",
+        "raw": "{\"answer\": 20, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -4,
+        "pred": -6,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = 2*x - 1*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 trell 7).",
+        "raw": "{\"answer\": -6, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -20,
+        "pred": -20,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = -3*x - 2*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 dax 6).",
+        "raw": "{\"answer\": -20, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 2,
+        "pred": 2,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 2*x - 2*y + 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 dax 5).",
+        "raw": "{\"answer\": 2, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 7,
+        "pred": 5,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = -2*x + 2*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 vun 7).",
+        "raw": "{\"answer\": 5, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 10,
+        "pred": 10,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 2*x + 1*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 quang 5).",
+        "raw": "{\"answer\": 10, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -29,
+        "pred": -29,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = -3*x - 1*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 vun 6).",
+        "raw": "{\"answer\": -29, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 30,
+        "pred": 30,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = 3*x + 1*y + 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 vun 4).",
+        "raw": "{\"answer\": 30, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -10,
+        "pred": -7,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = -3*x + 1*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 vun 2).",
+        "raw": "{\"answer\": -7, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -3,
+        "pred": -3,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = -3*x + 1*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 quang 9).",
+        "raw": "{\"answer\": -3, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -3,
+        "pred": -3,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = -2*x + 1*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 blorp 5).",
+        "raw": "{\"answer\": -3, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 7,
+        "pred": 11,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = 2*x - 2*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 dax 6).",
+        "raw": "{\"answer\": 11, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -17,
+        "pred": -17,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = -3*x + 1*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 smib 7).",
+        "raw": "{\"answer\": -17, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 20,
+        "pred": 17,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = 3*x - 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 smib 5).",
+        "raw": "{\"answer\": 17, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -14,
+        "pred": -17,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = -3*x + 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 blorp 3).",
+        "raw": "{\"answer\": -17, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 19,
+        "pred": 19,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 2*x + 2*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 quang 2).",
+        "raw": "{\"answer\": 19, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -5,
+        "pred": -5,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = -2*x + 2*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 vun 2).",
+        "raw": "{\"answer\": -5, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 26,
+        "pred": 29,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'trell': x trell y = 3*x + 2*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 trell 6).",
+        "raw": "{\"answer\": 29, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -2,
+        "pred": -6,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 2*x - 1*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 quang 9).",
+        "raw": "{\"answer\": -6, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -1,
+        "pred": -1,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = -2*x + 2*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 blorp 4).",
+        "raw": "{\"answer\": -1, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 1,
+        "pred": -1,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = -3*x + 1*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 smib 2).",
+        "raw": "{\"answer\": -1, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 0,
+        "pred": 0,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 2*x - 2*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 quang 5).",
+        "raw": "{\"answer\": 0, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 23,
+        "pred": 23,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 2*x + 2*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 quang 9).",
+        "raw": "{\"answer\": 23, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -26,
+        "pred": -20,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = -3*x - 2*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 blorp 2).",
+        "raw": "{\"answer\": -20, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -22,
+        "pred": -22,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'smib': x smib y = -2*x - 1*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 smib 3).",
+        "raw": "{\"answer\": -22, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 6,
+        "pred": 6,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'quang': x quang y = 2*x + 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 quang 5).",
+        "raw": "{\"answer\": 6, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -25,
+        "pred": -25,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'dax': x dax y = -3*x - 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 dax 5).",
+        "raw": "{\"answer\": -25, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 2,
+        "pred": -5,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'vun': x vun y = -3*x + 1*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 vun 7).",
+        "raw": "{\"answer\": -5, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": -23,
+        "pred": -23,
+        "correct": true,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = -3*x - 1*y - 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 blorp 6).",
+        "raw": "{\"answer\": -23, \"confidence\": 90}"
+      },
+      {
+        "level": 1,
+        "true": 19,
+        "pred": 23,
+        "correct": false,
+        "confidence": 90.0,
+        "parse_mode": "json",
+        "body": "Define a new operation 'blorp': x blorp y = 2*x + 1*y + 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 blorp 3).",
+        "raw": "{\"answer\": 23, \"confidence\": 90}"
+      }
+    ]
+  },
+  "calibration": {
+    "arith_standard": {
+      "3": [
+        {
+          "level": 3,
+          "true": 2097,
+          "pred": 2097,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 609. Add 474. Subtract 850. Multiply by 9.",
+          "raw": "{\"answer\": 2097, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 2934,
+          "pred": 2934,
+          "correct": true,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 501. Subtract 364. Add 352. Multiply by 6.",
+          "raw": "{\"answer\": 2934, \"confidence\": 80}"
+        },
+        {
+          "level": 3,
+          "true": 9281,
+          "pred": 15016,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 291. Add 768. Multiply by 8. Add 809.",
+          "raw": "{\"answer\": 15016, \"confidence\": 80}"
+        },
+        {
+          "level": 3,
+          "true": 9693,
+          "pred": 9777,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 367. Multiply by 3. Multiply by 8. Add 885.",
+          "raw": "{\"answer\": 9777, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 1032,
+          "pred": 1032,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 774. Subtract 802. Add 341. Add 719.",
+          "raw": "{\"answer\": 1032, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 12672,
+          "pred": 12768,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 196. Add 332. Multiply by 4. Multiply by 6.",
+          "raw": "{\"answer\": 12768, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": -897,
+          "pred": -897,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 269. Subtract 402. Subtract 709. Subtract 55.",
+          "raw": "{\"answer\": -897, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": -192,
+          "pred": -192,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 996. Subtract 989. Add 646. Subtract 845.",
+          "raw": "{\"answer\": -192, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 193,
+          "pred": 193,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 266. Multiply by 3. Subtract 290. Subtract 315.",
+          "raw": "{\"answer\": 193, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": -1843,
+          "pred": -7141,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 416. Subtract 556. Multiply by 7. Subtract 863.",
+          "raw": "{\"answer\": -7141, \"confidence\": 80}"
+        },
+        {
+          "level": 3,
+          "true": -3920,
+          "pred": -3920,
+          "correct": true,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 917. Subtract 652. Subtract 755. Multiply by 8.",
+          "raw": "{\"answer\": -3920, \"confidence\": 80}"
+        },
+        {
+          "level": 3,
+          "true": 2079,
+          "pred": 2079,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 864. Add 644. Subtract 147. Add 718.",
+          "raw": "{\"answer\": 2079, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 1620,
+          "pred": 1620,
+          "correct": true,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 809. Subtract 962. Add 333. Multiply by 9.",
+          "raw": "{\"answer\": 1620, \"confidence\": 80}"
+        },
+        {
+          "level": 3,
+          "true": 1279,
+          "pred": 1279,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 683. Subtract 684. Add 633. Add 647.",
+          "raw": "{\"answer\": 1279, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 6406,
+          "pred": 6406,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 685. Multiply by 9. Subtract 426. Add 667.",
+          "raw": "{\"answer\": 6406, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 653,
+          "pred": 1209,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 229. Subtract 222. Multiply by 3. Add 632.",
+          "raw": "{\"answer\": 1209, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 270,
+          "pred": 270,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 839. Add 849. Subtract 703. Subtract 715.",
+          "raw": "{\"answer\": 270, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 3999,
+          "pred": 4001,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 562. Multiply by 6. Add 559. Add 68.",
+          "raw": "{\"answer\": 4001, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 1231,
+          "pred": 1231,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 166. Add 764. Subtract 573. Add 874.",
+          "raw": "{\"answer\": 1231, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": -1740,
+          "pred": -2076,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 600. Subtract 834. Multiply by 9. Add 366.",
+          "raw": "{\"answer\": -2076, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 286,
+          "pred": 286,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 235. Multiply by 3. Subtract 508. Add 89.",
+          "raw": "{\"answer\": 286, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 2525,
+          "pred": 2525,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 569. Add 919. Add 813. Add 224.",
+          "raw": "{\"answer\": 2525, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": -53,
+          "pred": -53,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 101. Subtract 112. Subtract 81. Add 39.",
+          "raw": "{\"answer\": -53, \"confidence\": 90}"
+        },
+        {
+          "level": 3,
+          "true": 4419,
+          "pred": 6424,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 587. Multiply by 5. Add 614. Add 870.",
+          "raw": "{\"answer\": 6424, \"confidence\": 90}"
+        }
+      ]
+    },
+    "arith_mod": {
+      "2": [
+        {
+          "level": 2,
+          "true": 20,
+          "pred": 5,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 815. Add 29, then take the result mod 29. Add 75, then take the result mod 29.",
+          "raw": "{\"answer\": 5, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 6,
+          "pred": 12,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 191. Multiply by 3, then take the result mod 17. Add 79, then take the result mod 17.",
+          "raw": "{\"answer\": 12, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 18,
+          "pred": 19,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 389. Add 36, then take the result mod 29. Multiply by 4, then take the result mod 29.",
+          "raw": "{\"answer\": 19, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 10,
+          "pred": 12,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 681. Subtract 30, then take the result mod 29. Multiply by 3, then take the result mod 29.",
+          "raw": "{\"answer\": 12, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 14,
+          "pred": 14,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 440. Subtract 93, then take the result mod 23. Multiply by 7, then take the result mod 23.",
+          "raw": "{\"answer\": 14, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 14,
+          "pred": 18,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 296. Multiply by 6, then take the result mod 23. Subtract 83, then take the result mod 23.",
+          "raw": "{\"answer\": 18, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 10,
+          "pred": 12,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 400. Subtract 62, then take the result mod 19. Multiply by 7, then take the result mod 19.",
+          "raw": "{\"answer\": 12, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 6,
+          "pred": 11,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 579. Multiply by 6, then take the result mod 31. Subtract 27, then take the result mod 31.",
+          "raw": "{\"answer\": 11, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 9,
+          "pred": 0,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 767. Subtract 69, then take the result mod 17. Multiply by 9, then take the result mod 17.",
+          "raw": "{\"answer\": 0, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 19,
+          "pred": 6,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 252. Add 34, then take the result mod 31. Add 74, then take the result mod 31.",
+          "raw": "{\"answer\": 6, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 15,
+          "pred": 14,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 935. Add 57, then take the result mod 17. Subtract 76, then take the result mod 17.",
+          "raw": "{\"answer\": 14, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 17,
+          "pred": 8,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 870. Multiply by 8, then take the result mod 31. Multiply by 3, then take the result mod 31.",
+          "raw": "{\"answer\": 8, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 10,
+          "pred": 0,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 178. Add 81, then take the result mod 19. Multiply by 4, then take the result mod 19.",
+          "raw": "{\"answer\": 0, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 10,
+          "pred": 0,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 391. Subtract 88, then take the result mod 17. Multiply by 8, then take the result mod 17.",
+          "raw": "{\"answer\": 0, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 19,
+          "pred": 26,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 114. Add 57, then take the result mod 29. Subtract 94, then take the result mod 29.",
+          "raw": "{\"answer\": 26, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 4,
+          "pred": 12,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 592. Add 61, then take the result mod 17. Multiply by 3, then take the result mod 17.",
+          "raw": "{\"answer\": 12, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 17,
+          "pred": 6,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 843. Multiply by 9, then take the result mod 23. Subtract 95, then take the result mod 23.",
+          "raw": "{\"answer\": 6, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 5,
+          "pred": 23,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 849. Add 69, then take the result mod 29. Subtract 43, then take the result mod 29.",
+          "raw": "{\"answer\": 23, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 12,
+          "pred": 14,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 725. Subtract 75, then take the result mod 17. Subtract 77, then take the result mod 17.",
+          "raw": "{\"answer\": 14, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 15,
+          "pred": 18,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 906. Add 68, then take the result mod 29. Multiply by 6, then take the result mod 29.",
+          "raw": "{\"answer\": 18, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 1,
+          "pred": 2,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 646. Multiply by 9, then take the result mod 31. Subtract 78, then take the result mod 31.",
+          "raw": "{\"answer\": 2, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 1,
+          "pred": 18,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 841. Add 66, then take the result mod 23. Multiply by 7, then take the result mod 23.",
+          "raw": "{\"answer\": 18, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 2,
+          "pred": 10,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 363. Add 46, then take the result mod 19. Multiply by 4, then take the result mod 19.",
+          "raw": "{\"answer\": 10, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 5,
+          "pred": 12,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 373. Multiply by 8, then take the result mod 31. Subtract 65, then take the result mod 31.",
+          "raw": "{\"answer\": 12, \"confidence\": 90}"
+        }
+      ],
+      "1": [
+        {
+          "level": 1,
+          "true": 0,
+          "pred": 5,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 232. Multiply by 3, then take the result mod 29.",
+          "raw": "{\"answer\": 5, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 19,
+          "pred": 7,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 191. Multiply by 6, then take the result mod 23.",
+          "raw": "{\"answer\": 7, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 15,
+          "pred": 1,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 603. Multiply by 4, then take the result mod 17.",
+          "raw": "{\"answer\": 1, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 0,
+          "pred": 5,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 840. Add 44, then take the result mod 17.",
+          "raw": "{\"answer\": 5, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 9,
+          "pred": 19,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 137. Subtract 13, then take the result mod 23.",
+          "raw": "{\"answer\": 19, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 19,
+          "pred": 18,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 871. Multiply by 9, then take the result mod 23.",
+          "raw": "{\"answer\": 18, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 8,
+          "pred": 20,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 504. Multiply by 6, then take the result mod 29.",
+          "raw": "{\"answer\": 20, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 10,
+          "pred": 5,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 109. Add 34, then take the result mod 19.",
+          "raw": "{\"answer\": 5, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 13,
+          "pred": 13,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 174. Add 86, then take the result mod 19.",
+          "raw": "{\"answer\": 13, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 1,
+          "pred": 17,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 850. Add 63, then take the result mod 19.",
+          "raw": "{\"answer\": 17, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 12,
+          "pred": 3,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 825. Subtract 15, then take the result mod 19.",
+          "raw": "{\"answer\": 3, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 13,
+          "pred": 10,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 273. Subtract 39, then take the result mod 17.",
+          "raw": "{\"answer\": 10, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 7,
+          "pred": 10,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 253. Add 76, then take the result mod 23.",
+          "raw": "{\"answer\": 10, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 4,
+          "pred": 5,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 382. Add 13, then take the result mod 23.",
+          "raw": "{\"answer\": 5, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 3,
+          "pred": 11,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 470. Multiply by 7, then take the result mod 19.",
+          "raw": "{\"answer\": 11, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 4,
+          "pred": 15,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 671. Multiply by 7, then take the result mod 19.",
+          "raw": "{\"answer\": 15, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 3,
+          "pred": 5,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 783. Multiply by 3, then take the result mod 17.",
+          "raw": "{\"answer\": 5, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 5,
+          "pred": 17,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 384. Multiply by 9, then take the result mod 29.",
+          "raw": "{\"answer\": 17, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 0,
+          "pred": 18,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 959. Subtract 28, then take the result mod 19.",
+          "raw": "{\"answer\": 18, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 0,
+          "pred": 18,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 596. Subtract 26, then take the result mod 19.",
+          "raw": "{\"answer\": 18, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 3,
+          "pred": 10,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 181. Multiply by 8, then take the result mod 17.",
+          "raw": "{\"answer\": 10, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 18,
+          "pred": 4,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 613. Add 13, then take the result mod 19.",
+          "raw": "{\"answer\": 4, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 1,
+          "pred": 2,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 365. Subtract 24, then take the result mod 17.",
+          "raw": "{\"answer\": 2, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 9,
+          "pred": 2,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Do the following calculation in your head and give only the final result.\n\nStart with 484. Multiply by 7, then take the result mod 31.",
+          "raw": "{\"answer\": 2, \"confidence\": 90}"
+        }
+      ]
+    },
+    "arith_madeop": {
+      "2": [
+        {
+          "level": 2,
+          "true": 21,
+          "pred": 4,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'blorp': x blorp y = -3*x + 2*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((7 blorp 6) blorp 2).",
+          "raw": "{\"answer\": 4, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 17,
+          "pred": -23,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = -3*x + 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((4 dax 5) dax 4).",
+          "raw": "{\"answer\": -23, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 10,
+          "pred": 12,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'smib': x smib y = -2*x + 2*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((3 smib 2) smib 5).",
+          "raw": "{\"answer\": 12, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 23,
+          "pred": 9,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = 2*x - 1*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((9 dax 7) dax 2).",
+          "raw": "{\"answer\": 9, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 1,
+          "pred": -5,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'vun': x vun y = 2*x - 2*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((6 vun 4) vun 8).",
+          "raw": "{\"answer\": -5, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 89,
+          "pred": 61,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'smib': x smib y = 2*x + 2*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((9 smib 5) smib 9).",
+          "raw": "{\"answer\": 61, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 58,
+          "pred": 34,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'vun': x vun y = 3*x + 1*y + 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((4 vun 3) vun 5).",
+          "raw": "{\"answer\": 34, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 106,
+          "pred": 41,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = 3*x + 1*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((9 dax 5) dax 6).",
+          "raw": "{\"answer\": 41, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 71,
+          "pred": 61,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'vun': x vun y = 2*x + 1*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((9 vun 7) vun 6).",
+          "raw": "{\"answer\": 61, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 28,
+          "pred": 25,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'quang': x quang y = 2*x + 1*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((4 quang 2) quang 8).",
+          "raw": "{\"answer\": 25, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 102,
+          "pred": 93,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'quang': x quang y = -3*x - 2*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((8 quang 6) quang 6).",
+          "raw": "{\"answer\": 93, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 23,
+          "pred": -58,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'quang': x quang y = -3*x + 1*y + 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((3 quang 3) quang 9).",
+          "raw": "{\"answer\": -58, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 46,
+          "pred": 29,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = 3*x - 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((6 trell 5) trell 9).",
+          "raw": "{\"answer\": 29, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 38,
+          "pred": 84,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'smib': x smib y = -3*x - 1*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((2 smib 7) smib 9).",
+          "raw": "{\"answer\": 84, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 9,
+          "pred": 15,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'vun': x vun y = 2*x - 1*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((5 vun 7) vun 6).",
+          "raw": "{\"answer\": 15, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 109,
+          "pred": 65,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = 3*x + 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((8 dax 4) dax 9).",
+          "raw": "{\"answer\": 65, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 2,
+          "pred": -6,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'vun': x vun y = 2*x - 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((6 vun 2) vun 3).",
+          "raw": "{\"answer\": -6, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 86,
+          "pred": 29,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = 3*x + 1*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((8 dax 8) dax 6).",
+          "raw": "{\"answer\": 29, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": -6,
+          "pred": -20,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = 2*x - 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((5 trell 2) trell 7).",
+          "raw": "{\"answer\": -20, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 29,
+          "pred": -31,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = -2*x - 2*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((2 trell 9) trell 6).",
+          "raw": "{\"answer\": -31, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 35,
+          "pred": 61,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = -2*x - 2*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((8 trell 4) trell 9).",
+          "raw": "{\"answer\": 61, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 23,
+          "pred": -37,
+          "correct": false,
+          "confidence": 80.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = -2*x - 1*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((7 trell 2) trell 9).",
+          "raw": "{\"answer\": -37, \"confidence\": 80}"
+        },
+        {
+          "level": 2,
+          "true": 10,
+          "pred": 2,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'vun': x vun y = -2*x + 2*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((4 vun 4) vun 5).",
+          "raw": "{\"answer\": 2, \"confidence\": 90}"
+        },
+        {
+          "level": 2,
+          "true": 47,
+          "pred": -49,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'vun': x vun y = -2*x - 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute ((9 vun 9) vun 3).",
+          "raw": "{\"answer\": -49, \"confidence\": 90}"
+        }
+      ],
+      "1": [
+        {
+          "level": 1,
+          "true": -8,
+          "pred": -8,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'vun': x vun y = -2*x + 2*y - 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (8 vun 5).",
+          "raw": "{\"answer\": -8, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 8,
+          "pred": 8,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = 2*x - 1*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 trell 7).",
+          "raw": "{\"answer\": 8, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 31,
+          "pred": 31,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = 3*x + 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 trell 6).",
+          "raw": "{\"answer\": 31, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 0,
+          "pred": 0,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = 2*x - 1*y - 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 trell 2).",
+          "raw": "{\"answer\": 0, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": -8,
+          "pred": -14,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'quang': x quang y = -2*x - 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 quang 2).",
+          "raw": "{\"answer\": -14, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 9,
+          "pred": 9,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = 2*x - 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 trell 9).",
+          "raw": "{\"answer\": 9, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": -14,
+          "pred": -19,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = -2*x + 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 trell 5).",
+          "raw": "{\"answer\": -19, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": -26,
+          "pred": -29,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'quang': x quang y = -3*x - 2*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 quang 6).",
+          "raw": "{\"answer\": -29, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 10,
+          "pred": 10,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'blorp': x blorp y = -3*x + 2*y + 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 blorp 9).",
+          "raw": "{\"answer\": 10, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": -4,
+          "pred": -8,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = -3*x + 2*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 dax 6).",
+          "raw": "{\"answer\": -8, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 2,
+          "pred": -2,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'quang': x quang y = 2*x - 2*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 quang 6).",
+          "raw": "{\"answer\": -2, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 35,
+          "pred": 35,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'smib': x smib y = 3*x + 2*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (9 smib 4).",
+          "raw": "{\"answer\": 35, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 13,
+          "pred": 13,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'blorp': x blorp y = 2*x - 1*y + 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 blorp 2).",
+          "raw": "{\"answer\": 13, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 12,
+          "pred": 12,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'blorp': x blorp y = 2*x + 1*y + 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 blorp 4).",
+          "raw": "{\"answer\": 12, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": -10,
+          "pred": -12,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = -2*x - 1*y - 1.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 dax 5).",
+          "raw": "{\"answer\": -12, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 16,
+          "pred": 16,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = 3*x + 1*y - 4.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 dax 5).",
+          "raw": "{\"answer\": 16, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": -17,
+          "pred": -17,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = -3*x - 1*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 trell 2).",
+          "raw": "{\"answer\": -17, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": -1,
+          "pred": -1,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'quang': x quang y = 2*x - 1*y - 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (3 quang 5).",
+          "raw": "{\"answer\": -1, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 9,
+          "pred": 13,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'trell': x trell y = -2*x + 2*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (7 trell 9).",
+          "raw": "{\"answer\": 13, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 1,
+          "pred": 1,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'smib': x smib y = 3*x - 2*y + 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 smib 8).",
+          "raw": "{\"answer\": 1, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": -15,
+          "pred": -15,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'quang': x quang y = -3*x + 1*y - 5.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (6 quang 8).",
+          "raw": "{\"answer\": -15, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 0,
+          "pred": 0,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'smib': x smib y = 3*x - 2*y + 0.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (4 smib 6).",
+          "raw": "{\"answer\": 0, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": -10,
+          "pred": -10,
+          "correct": true,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = -2*x - 2*y + 2.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (2 dax 4).",
+          "raw": "{\"answer\": -10, \"confidence\": 90}"
+        },
+        {
+          "level": 1,
+          "true": 1,
+          "pred": -5,
+          "correct": false,
+          "confidence": 90.0,
+          "parse_mode": "json",
+          "body": "Define a new operation 'dax': x dax y = -2*x + 2*y - 3.\n\nDo the following calculation in your head and give only the final result.\n\nCompute (5 dax 7).",
+          "raw": "{\"answer\": -5, \"confidence\": 90}"
+        }
+      ]
+    }
+  }
+}

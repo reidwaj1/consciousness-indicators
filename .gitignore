@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+# written by `hot2_v2.py --selftest`
+*_selftest.json
+*_selftest.png

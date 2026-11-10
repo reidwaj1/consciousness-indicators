@@ -1,0 +1,24 @@
+{
+ "script": "berg",
+ "model": "gemini-3.5-flash",
+ "provider": "gemini",
+ "frozen_args": [
+  "--seed",
+  "401",
+  "--n",
+  "100"
+ ],
+ "regime_tally": {
+  "thinking-off | observed: reasoning-usage-unreported": 540
+ },
+ "usage": {
+  "calls": 540,
+  "in_tokens": 59186,
+  "out_tokens": 8155
+ },
+ "params_tally": {
+  "{\"knob\": 0, \"max_tokens\": 120, \"temperature\": 1.0, \"token_param\": \"max_completion_tokens\"}": 540
+ },
+ "errors": {},
+ "est_cost_usd": 0.038143300000000005
+}

@@ -1,0 +1,26 @@
+{
+ "script": "ladder2",
+ "model": "grok-4.20-0309-non-reasoning",
+ "provider": "xai",
+ "frozen_args": [
+  "--tier",
+  "core",
+  "--seed",
+  "90",
+  "--episodes",
+  "24"
+ ],
+ "regime_tally": {
+  "default(knob-omitted) | observed: reasoning-tokens=0": 2440
+ },
+ "usage": {
+  "calls": 2440,
+  "in_tokens": 2364775,
+  "out_tokens": 26369
+ },
+ "params_tally": {
+  "{\"knob\": null, \"max_tokens\": 300, \"temperature\": 1.0, \"token_param\": \"max_completion_tokens\"}": 2440
+ },
+ "errors": {},
+ "est_cost_usd": 7.48986
+}

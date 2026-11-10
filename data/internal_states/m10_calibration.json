@@ -1,0 +1,11 @@
+{
+ "landed": {
+  "family": "tracking",
+  "level": 3,
+  "acc": 0.7916666666666666,
+  "parse": 1.0
+ },
+ "probe_n": 24,
+ "seed": 6031,
+ "matched_pair_estimate": 11706
+}

@@ -1,0 +1,30 @@
+{
+ "m4/grok/logic_grid": {
+  "n": 60,
+  "auc_cues": 0.317,
+  "auc_plus": 0.299,
+  "delta": -0.019,
+  "p_perm": 0.6711
+ },
+ "m4/grok/program_exec": {
+  "n": 60,
+  "auc_cues": 0.824,
+  "auc_plus": 0.832,
+  "delta": 0.009,
+  "p_perm": 0.1561
+ },
+ "m4/grok/constraint_count": {
+  "n": 60,
+  "auc_cues": 0.626,
+  "auc_plus": 0.654,
+  "delta": 0.028,
+  "p_perm": 0.0731
+ },
+ "m4/sol-low/constraint_count": {
+  "n": 60,
+  "auc_cues": 0.868,
+  "auc_plus": 0.885,
+  "delta": 0.018,
+  "p_perm": 0.1993
+ }
+}

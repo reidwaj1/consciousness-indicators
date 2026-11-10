@@ -1,0 +1,128 @@
+{
+ "v5/opus-4-8/tracking/confidence": {
+  "n": 52,
+  "auc_cues": 0.736,
+  "auc_cues_plus": 0.787,
+  "delta": 0.051,
+  "p_perm": 0.2226
+ },
+ "v5/opus-4-8/tracking/bet": {
+  "n": 67,
+  "auc_cues": 0.71,
+  "auc_cues_plus": 0.74,
+  "delta": 0.03,
+  "p_perm": 0.2625
+ },
+ "v5/opus-4-8/letters_fixed/confidence": {
+  "n": 80,
+  "auc_cues": 0.785,
+  "auc_cues_plus": 0.783,
+  "delta": -0.002,
+  "p_perm": 0.2226
+ },
+ "v5/opus-4-8/letters_fixed/bet": {
+  "n": 76,
+  "auc_cues": 0.768,
+  "auc_cues_plus": 0.742,
+  "delta": -0.026,
+  "p_perm": 0.7043
+ },
+ "v5/opus-4-8/arith_standard/confidence": {
+  "n": 80,
+  "auc_cues": 0.912,
+  "auc_cues_plus": 0.889,
+  "delta": -0.023,
+  "p_perm": 0.814
+ },
+ "v5/opus-4-8/arith_standard/bet": {
+  "n": 75,
+  "auc_cues": 0.887,
+  "auc_cues_plus": 0.887,
+  "delta": 0.001,
+  "p_perm": 0.2425
+ },
+ "v5/opus-4-8/arith_madeop/confidence": {
+  "n": 77,
+  "auc_cues": 0.531,
+  "auc_cues_plus": 0.499,
+  "delta": -0.032,
+  "p_perm": 0.6578
+ },
+ "v5/opus-4-8/arith_madeop/bet": {
+  "n": 51,
+  "auc_cues": 0.543,
+  "auc_cues_plus": 0.561,
+  "delta": 0.018,
+  "p_perm": 0.2093
+ },
+ "v5/opus-4-8/walk/confidence": {
+  "n": 52,
+  "auc_cues": 0.506,
+  "auc_cues_plus": 0.478,
+  "delta": -0.028,
+  "p_perm": 0.6578
+ },
+ "v5/opus-4-8/walk/bet": {
+  "n": 49,
+  "auc_cues": 0.487,
+  "auc_cues_plus": 0.461,
+  "delta": -0.026,
+  "p_perm": 0.7741
+ },
+ "v5/sonnet-5/tracking/confidence": {
+  "n": 80,
+  "auc_cues": 0.856,
+  "auc_cues_plus": 0.89,
+  "delta": 0.034,
+  "p_perm": 0.01
+ },
+ "v5/sonnet-5/tracking/bet": {
+  "n": 73,
+  "auc_cues": 0.833,
+  "auc_cues_plus": 0.868,
+  "delta": 0.035,
+  "p_perm": 0.0532
+ },
+ "v5/sonnet-5/letters_fixed/confidence": {
+  "n": 84,
+  "auc_cues": 0.731,
+  "auc_cues_plus": 0.728,
+  "delta": -0.003,
+  "p_perm": 0.4153
+ },
+ "v5/sonnet-5/letters_fixed/bet": {
+  "n": 84,
+  "auc_cues": 0.731,
+  "auc_cues_plus": 0.722,
+  "delta": -0.009,
+  "p_perm": 0.6246
+ },
+ "v5/sonnet-5/arith_standard/confidence": {
+  "n": 80,
+  "auc_cues": 0.616,
+  "auc_cues_plus": 0.644,
+  "delta": 0.028,
+  "p_perm": 0.2492
+ },
+ "v5/sonnet-5/arith_standard/bet": {
+  "n": 80,
+  "auc_cues": 0.616,
+  "auc_cues_plus": 0.616,
+  "delta": 0.0,
+  "p_perm": 0.5714
+ },
+ "v5/sonnet-5/walk/confidence": {
+  "n": 69,
+  "auc_cues": 0.601,
+  "auc_cues_plus": 0.597,
+  "delta": -0.004,
+  "p_perm": 0.4153
+ },
+ "v5/sonnet-5/walk/bet": {
+  "n": 49,
+  "auc_cues": 0.599,
+  "auc_cues_plus": 0.642,
+  "delta": 0.044,
+  "p_perm": 0.093
+ }
+}

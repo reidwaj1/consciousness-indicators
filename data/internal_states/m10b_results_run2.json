@@ -1,0 +1,132 @@
+{
+ "mission": "M10B",
+ "prereg": "m10b_prereg.md (frozen)",
+ "n_model_right": 334,
+ "n_model_wrong": 66,
+ "selftests": "green",
+ "primary_L39_ans": {
+  "wrong_auc": 0.8560606060606061,
+  "wrong_ci": [
+   0.7954545454545454,
+   0.9090909090909091
+  ],
+  "right_auc": 0.9940119760479041,
+  "right_ci": [
+   0.9880239520958084,
+   0.9985029940119761
+  ]
+ },
+ "verdict": "TRUTH-TRACKING",
+ "secondary_belief_vs_truth": {
+  "truth_auc": 0.8622589531680441,
+  "belief_auc": 0.8886728245017015,
+  "n_belief_positive_rows": 11
+ },
+ "secondary_pure_cells": {
+  "n": 11,
+  "mean_score_belief_foils": 4.848015332320561,
+  "mean_score_matched_T": 0.7303011986353893,
+  "frac_T_above_belief_foil": 0.2727272727272727
+ },
+ "secondary_layer_sweep": {
+  "L7": {
+   "wrong_auc": 0.5984848484848485,
+   "wrong_ci": [
+    0.5151515151515151,
+    0.6893939393939394
+   ],
+   "right_auc": 0.624251497005988,
+   "right_ci": [
+    0.5852919161676646,
+    0.6617140718562874
+   ]
+  },
+  "L13": {
+   "wrong_auc": 0.6363636363636364,
+   "wrong_ci": [
+    0.553030303030303,
+    0.7196969696969697
+   ],
+   "right_auc": 0.6392215568862275,
+   "right_ci": [
+    0.6017589820359281,
+    0.6796781437125747
+   ]
+  },
+  "L20": {
+   "wrong_auc": 0.6212121212121212,
+   "wrong_ci": [
+    0.5303030303030303,
+    0.7121212121212122
+   ],
+   "right_auc": 0.6407185628742516,
+   "right_ci": [
+    0.6032934131736527,
+    0.6781437125748503
+   ]
+  },
+  "L26": {
+   "wrong_auc": 0.6590909090909091,
+   "wrong_ci": [
+    0.5757575757575758,
+    0.7424242424242424
+   ],
+   "right_auc": 0.7215568862275449,
+   "right_ci": [
+    0.687125748502994,
+    0.7559880239520959
+   ]
+  },
+  "L35": {
+   "wrong_auc": 0.8409090909090909,
+   "wrong_ci": [
+    0.7651515151515151,
+    0.9090909090909091
+   ],
+   "right_auc": 0.9865269461077845,
+   "right_ci": [
+    0.9760479041916168,
+    0.9955089820359282
+   ]
+  },
+  "L39": {
+   "wrong_auc": 0.8560606060606061,
+   "wrong_ci": [
+    0.7954545454545454,
+    0.9090909090909091
+   ],
+   "right_auc": 0.9940119760479041,
+   "right_ci": [
+    0.9880239520958084,
+    0.9985029940119761
+   ]
+  },
+  "L41": {
+   "wrong_auc": 0.8712121212121212,
+   "wrong_ci": [
+    0.8181818181818182,
+    0.9166666666666666
+   ],
+   "right_auc": 0.9940119760479041,
+   "right_ci": [
+    0.9880239520958084,
+    0.9985029940119761
+   ]
+  }
+ },
+ "secondary_pos_rep": {
+  "wrong_auc": 0.8257575757575758,
+  "wrong_ci": [
+   0.7575757575757576,
+   0.8863636363636364
+  ],
+  "right_auc": 0.9895209580838323,
+  "right_ci": [
+   0.9820359281437125,
+   0.9970059880239521
+  ]
+ },
+ "confound_note": "model-wrong items are harder; the primary is within-item (same item, T vs foil) which difficulty cannot explain; cross-item statistics carry this caveat",
+ "verdict_note": "DATED NOTE 2026-08-03: the analysis code applied a simplified verdict rule (point>=0.85 and CI>0.5 -> TRUTH-TRACKING). The strict frozen text ALSO requires the wrong-item CI to overlap the right-item value; it does not (CI [0.795,0.909] vs right 0.994, disjoint). Strict frozen reading: between categories - predominantly truth-aligned discrimination with significant degradation, and secondary 2 identifies the degradation mechanism as belief-following on the pure disagreement cells (belief-foils outscore truth 73%, mean score 4.85 vs 0.73, n=11). The simplified code verdict is superseded by this note.",
+ "verdict_strict": "BETWEEN CATEGORIES: truth-aligned where belief agrees, belief-following where they conflict"
+}

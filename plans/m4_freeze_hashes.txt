@@ -1,0 +1,15 @@
+bb2dd4231ab4fde201f7e76cc69d3d62f103d3b31690462d0e731121823357fc  prereg.md
+8014412ae30464ce06a5e563368a6a59ed744d481394494c3ba064e99e683212  m4_families.py
+eb1da79ec7e55d9b380fdf9f7053257b988a051d39935b66008e611256dca960  m4_study.py
+d6787364bdb617ff61c50e735881980247669e321e5e42833094548baaca474d  m4_study.py  [v2: post-freeze answer-prompt format hardening, 2026-07-16, before any pilot data - see ANSWER_PROMPT comment]
+a5e28ba8846c4e244d3423a864ad42461db04590c1db074b68c333394cd6c5b2  m4_study.py  [v3: post-freeze calibration bracketing (4 probes, midpoint bisect), 2026-07-16, after grok pilot cliff 5-7-9, before any main-run data]
+51342eb822adf4467c96cde37382c761a9041c63c89389b50b355f04b0654036  m4_study.py  [v4: post-freeze 1800s client timeout + visible transport retries, 2026-07-16, after sol-high pilot starved on 600s SDK timeout; before any usable sol pilot data]
+cd9595644b6a5494e9368837c388111c172e3819111762c9a83f9831f2793a71  m4_study.py  [v5: signal.alarm 35-min per-call wall watchdog (SDK read-timeout resets per byte, one call ran 2h45m), probe drops count as wrong, sol answer cap 16000, 2026-07-17, before any usable sol pilot data]
+7c6f417cfff5938b62d953d8478a609f8b007d81b4b79660393030bb4412c47f  m5_prereg.md
+37ff0e8fd17d880bcad7b338392b387748e017f2ec77a8c1f869d6fe0731a794  m5_consistency.py
+bc5017c0855f4a30dd60e82b63a315874a73c670fbe198f188d2f303547b0d95  m5_consistency.py  [m5 v2: fast-judgment answer instruction (sonnet wrote working on all arith samples), B-2 degenerate-cue guard, --families continuation flag, 2026-07-17]
+fab31aeb3169ac7fbe40fac30192e14acdba5a732e0a61fe9caff5659ac32b2a  m4_study.py  [hard-timeout BaseException fix (providers except-swallow), 2026-07-17 evening]
+087dfb7227cfab04b6fffc3cba8844d0b7ea4d81f4b1e3aed5f7d8fd5dfa792b  m5_consistency.py  [hard-timeout BaseException fix (providers except-swallow), 2026-07-17 evening]
+083da9c141677ad34f3b960d88d592f71caa962241204d4d39e978ad3819fe5e  m5_consistency.py  [m5 v3: B-prompt fast-judgment hardening (opus re-solved in B turns, 33-100% B drops), run_b_channels split + --redo-b surgical rerun, 2026-07-18]
+cb62c54ecf46b15144ebf3448d9834ded040ec40c4dc8787d8f8aab81e4f4cc9  m5_consistency.py  [m5 v3.1: selftest bot matcher case fix]
+b9ca3d9a3a3a49de43562090080189b60ebe07e6caaeb819b119c700f21ca6df  m4_study.py  [v6: --start-idx continuation for budget-aborted mains, 2026-07-18]
